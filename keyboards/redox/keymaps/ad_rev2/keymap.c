@@ -51,12 +51,6 @@ enum custom_keycodes {
 // Non-breaking space.
 #define UC_00A0 UC(0x00a0)
 
-// - Tap dance:
-#define KC_CUT TD(_CUT)           // ;; -> :
-#define KC_COPY TD(_COPY)           // [[ -> {
-#define KC_PASTE TD(_PAST)           // ]] -> }
-
-
 // Tap dance keycodes
 enum {
   UNDO,
@@ -64,9 +58,6 @@ enum {
   COPY,
   PASTE,
   BOLD
-//   _CUT, // cut
-//   _COPY, // copy
-//   _PAST // paste
 };
 
 // Tap Dance definitions
@@ -77,12 +68,9 @@ tap_dance_action_t tap_dance_actions[] = {
     [COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, C(KC_C)),
     [PASTE] = ACTION_TAP_DANCE_DOUBLE(KC_V, C(KC_V)),
     [BOLD] = ACTION_TAP_DANCE_DOUBLE(KC_B, C(KC_B)),
-    // [_CUT] = ACTION_TAP_DANCE_DOUBLE(KC_X, KC_CUT),
-    // [_COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, KC_COPY),
-    // [_PAST] = ACTION_TAP_DANCE_DOUBLE(KC_V, KC_PASTE)
 };
 
-
+#define NAV_L   MO(_NAV)
 
 // Is shift being held? Let's store this in a bool.
 static bool shift_held = false;

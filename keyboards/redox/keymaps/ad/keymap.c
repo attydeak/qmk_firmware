@@ -45,7 +45,7 @@ enum custom_keycodes {
 
 // Shortcut to make keymap more readable
 #define KC_SYQT LT(_SYMB, KC_QUOT)
-#define SYM_L   MO(_SYMB)
+#define NAV_L   MO(_NAV)
 #define MO_INTR MO(_INTER)
 #define TT_ADJ  TT(_ADJUST)
 
@@ -162,11 +162,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_BSLS ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     SYM_L   ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
+     NAV_L   ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,KC_Z    ,TD(_CUT),TD(_COPY),TD(_PAST),KC_B  ,TT(_SYMB),TT(_NAV),       KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
+     KC_LSFT ,KC_Z    ,TD(_CUT),TD(_COPY),TD(_PAST),KC_B  ,TT(_NAV),KC_LSFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_LCTL ,KC_SPC  ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_HYPR ,KC_APP  ,MO_INTR
+     MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_SPC  ,KC_LCTL ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_HYPR ,KC_APP  ,MO_INTR
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -208,7 +208,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,        _______ ,XXXXXXX ,XXXXXXX ,KC_P1   ,KC_P2   ,KC_P3   ,KC_PENT ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    _______ ,UC_00A0 ,        _______ ,_______ ,    _______ ,     KC_P0   ,KC_PDOT ,KC_PENT ,_______
+     _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    UC_00A0, _______ ,        _______ ,_______ ,    _______ ,     KC_P0   ,KC_PDOT ,KC_PENT ,_______
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
