@@ -27,7 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define _INTER 3
 #define _ADJUST 4
 
-
 enum custom_keycodes {
     QWERTY = SAFE_RANGE,
     NAV,
@@ -45,12 +44,18 @@ enum custom_keycodes {
 
 // Shortcut to make keymap more readable
 #define KC_SYQT LT(_SYMB, KC_QUOT)
-#define SYM_L   MO(_SYMB)
+#define NAV_L   MO(_NAV)
 #define MO_INTR MO(_INTER)
 #define TT_ADJ  TT(_ADJUST)
 
 // Non-breaking space.
 #define UC_00A0 UC(0x00a0)
+
+// - Tap dance:
+#define KC_CUT TD(_CUT)           // ;; -> :
+#define KC_COPY TD(_COPY)           // [[ -> {
+#define KC_PASTE TD(_PAST)           // ]] -> }
+
 
 // Tap dance keycodes
 enum tap_dance{
@@ -67,6 +72,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     [_PAST] = ACTION_TAP_DANCE_DOUBLE(KC_V, KC_PASTE)
 };
 
+
+
 // Is shift being held? Let's store this in a bool.
 static bool shift_held = false;
 
@@ -75,28 +82,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
         case SHRUG:
             if (record->event.pressed) {
-                send_unicode_string("¯\\_(ツ)_/¯");
+                SEND_STRING("(huggingface)");
             }
             return false;
             break;
 
         case YOSHI:
             if (record->event.pressed) {
-                SEND_STRING(":yellow_yoshi:");
+                SEND_STRING("(huggingface)");
             }
             return false;
             break;
 
         case THUMB_UP:
             if (record->event.pressed) {
-                register_unicode(0x1F44D);
+                SEND_STRING("(thumbsup)");
             }
             return false;
             break;
 
         case WAVE:
             if (record->event.pressed) {
-                register_unicode(0x1F44B);
+                SEND_STRING("(wave)");
             }
             return false;
             break;
@@ -105,12 +112,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             shift_held = record->event.pressed;
             return true;
             break;
-
         case KC_RSFT:
             shift_held = record->event.pressed;
             return true;
             break;
-
         case M_BRACKET_LEFT: {
             if (record->event.pressed) {
                 if (shift_held) {
@@ -130,7 +135,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
             break;
         }
-
         case M_BRACKET_RIGHT: {
             if (record->event.pressed) {
                 if (shift_held) {
@@ -158,15 +162,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_GRV  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_EQL  ,
+     KC_GRV  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_MINS ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_BSLS ,
+     KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_EQL  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     SYM_L   ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
+     NAV_L   ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,KC_Z    ,TD(_CUT),TD(_COPY),TD(_PAST),KC_B  ,TT(_SYMB),TT(_NAV),       KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
+     KC_LSFT ,KC_Z    ,TD(_CUT),TD(_COPY),TD(_PAST),KC_B  ,TT(_NAV),KC_LSFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_LCTL ,KC_SPC  ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_HYPR ,KC_APP  ,MO_INTR
+     MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_SPC  ,KC_LCTL ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_APP  ,KC_BSLS ,MO_INTR
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -178,9 +182,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,XXXXXXX ,KC_VOLD ,KC_VOLU ,KC_MUTE ,XXXXXXX ,_______ ,                          _______ ,KC_PGDN ,KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RIGHT,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,_______ ,        _______ ,_______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+     KC_LSFT ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,KC_LSFT ,        _______ ,_______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    XXXXXXX ,_______ ,        _______ ,XXXXXXX ,    XXXXXXX ,     _______ ,XXXXXXX ,XXXXXXX ,_______
+     _______ ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    _______ ,KC_LCTL ,        _______ ,XXXXXXX ,    XXXXXXX ,     _______ ,XXXXXXX ,XXXXXXX ,_______
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -208,7 +212,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,        _______ ,XXXXXXX ,XXXXXXX ,KC_P1   ,KC_P2   ,KC_P3   ,KC_PENT ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    _______ ,UC_00A0 ,        _______ ,_______ ,    _______ ,     KC_P0   ,KC_PDOT ,KC_PENT ,_______
+     _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    UC_00A0 ,_______ ,        _______ ,_______ ,    _______ ,     KC_P0   ,KC_PDOT ,KC_PENT ,_______
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 

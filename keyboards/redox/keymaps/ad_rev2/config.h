@@ -34,7 +34,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Change the default tapping toggle value (normally 5) */
 #define TAPPING_TOGGLE 2
-
 #define TAPPING_TERM 200
 
 // #define RETRO_TAPPING
