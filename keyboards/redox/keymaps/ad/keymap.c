@@ -53,14 +53,14 @@ enum custom_keycodes {
 #define UC_00A0 UC(0x00a0)
 
 // Tap dance keycodes
-enum tap_dance{
+enum {
   _CUT, // cut
   _COPY, // copy
   _PAST // paste
 };
 
 // Tap Dance definitions
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
     // Tap once for KC, twice for Command
     [_CUT] = ACTION_TAP_DANCE_DOUBLE(KC_X, KC_CUT),
     [_COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, KC_COPY),
@@ -75,28 +75,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
         case SHRUG:
             if (record->event.pressed) {
-                send_unicode_string("¯\\_(ツ)_/¯");
+                send_unicode_string("(shrug)");
             }
             return false;
             break;
 
         case YOSHI:
             if (record->event.pressed) {
-                SEND_STRING(":yellow_yoshi:");
+                SEND_STRING("(huggingface)");
             }
             return false;
             break;
 
         case THUMB_UP:
             if (record->event.pressed) {
-                register_unicode(0x1F44D);
+                SEND_STRING("(thumbsup)");
             }
             return false;
             break;
 
         case WAVE:
             if (record->event.pressed) {
-                register_unicode(0x1F44B);
+                SEND_STRING("(wave)");
             }
             return false;
             break;
