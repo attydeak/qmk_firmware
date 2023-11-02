@@ -51,7 +51,7 @@ enum custom_keycodes {
 // Non-breaking space.
 #define UC_00A0 UC(0x00a0)
 
-// // Key when tapped, alt when held
+// Key when tapped, alt when held
 #define CTRLA LT(0,KC_A)
 #define CTRLS LT(0,KC_S)
 #define CTRLZ LT(0,KC_Z)
@@ -63,6 +63,9 @@ enum custom_keycodes {
 #define CTRLY LT(0,KC_Y)
 #define CTRLT LT(0,KC_T)
 #define CTRLL LT(0,KC_L)
+
+//Ctrl + Shift
+#define CSHIFT LCTL(KC_LSFT)
 
 tap_dance_action_t tap_dance_actions[] = {};
 
@@ -233,7 +236,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      NAV_L   ,CTRLA   ,CTRLS   ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,CTRLL   ,KC_SCLN ,KC_SYQT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,CTRLZ   ,CTRLX   ,CTRLC   ,CTRLV   ,CTRLB   ,TT(_NAV),KC_LSFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
+     KC_LSFT ,CTRLZ   ,CTRLX   ,CTRLC   ,CTRLV   ,CTRLB   ,TT(_NAV),CSHIFT  ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
      MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_SPC  ,KC_LCTL ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_HYPR ,KC_BSLS ,MO_INTR
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
