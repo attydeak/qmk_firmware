@@ -60,29 +60,6 @@ enum custom_keycodes {
 #define CTRLV LT(0,KC_V)
 #define CTRLB LT(0,KC_B)
 
-// // Tap dance keycodes
-// enum {
-//   ALL,
-//   SAVE,
-//   UNDO,
-//   CUT,
-//   COPY,
-//   PASTE,
-//   BOLD
-// };
-
-// // Tap Dance definitions
-// tap_dance_action_t tap_dance_actions[] = {
-//     // Tap once for KC, twice for Command
-//     [ALL] = ACTION_TAP_DANCE_DOUBLE(KC_A, C(KC_A)),
-//     [SAVE] = ACTION_TAP_DANCE_DOUBLE(KC_S, C(KC_S)),
-//     [UNDO] = ACTION_TAP_DANCE_DOUBLE(KC_Z, C(KC_Z)),
-//     [CUT] = ACTION_TAP_DANCE_DOUBLE(KC_X, C(KC_X)),
-//     [COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, C(KC_C)),
-//     [PASTE] = ACTION_TAP_DANCE_DOUBLE(KC_V, C(KC_V)),
-//     [BOLD] = ACTION_TAP_DANCE_DOUBLE(KC_B, C(KC_B)),
-// };
-
 tap_dance_action_t tap_dance_actions[] = {};
 
 // Is shift being held? Let's store this in a bool.
@@ -172,7 +149,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
-            // break;
 
         case LT(0,KC_S):
             if (!record->tap.count && record->event.pressed) {
@@ -180,7 +156,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;           // Initialize tap structure associated with example tap dance key
-            // break;
 
         case LT(0,KC_Z):
             if (!record->tap.count && record->event.pressed) {
@@ -188,7 +163,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
-            // break;
 
         case LT(0,KC_X):
             if (!record->tap.count && record->event.pressed) {
@@ -196,7 +170,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
-            // break;
 
         case LT(0,KC_C):
             if (!record->tap.count && record->event.pressed) {
@@ -204,7 +177,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
-            // break;
 
         case LT(0,KC_V):
             if (!record->tap.count && record->event.pressed) {
@@ -212,7 +184,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
-            // break;
 
         case LT(0,KC_B):
             if (!record->tap.count && record->event.pressed) {
@@ -220,7 +191,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
-            // break;
     }
     return true;
 };
