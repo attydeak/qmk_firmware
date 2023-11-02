@@ -1,0 +1,1 @@
+-Wl,--gc-sections -Wl,-Map=.build/redox_rev1_base_ad_rev3.map,--cref   -lm 
