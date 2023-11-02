@@ -9,17 +9,17 @@
 *.orig
 *.rej
 
-# Build artifacts
-.clang_complete
-.build/
-*.elf
-*.log
-*.lss
-*.lst
-*.map
-*.o
-*.stackdump
-*.sym
+# # Build artifacts
+# .clang_complete
+# .build/
+# *.elf
+# *.log
+# *.lss
+# *.lst
+# *.map
+# *.o
+# *.stackdump
+# *.sym
 
 # QMK-specific
 api_data/v1
