@@ -1187,7 +1187,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x62bc
+.text           0x0000000000000000     0x62fe
  *(.vectors)
  .vectors       0x0000000000000000       0xac /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
                 0x0000000000000000                __vectors
@@ -1346,1174 +1346,1174 @@ END GROUP
                 0x0000000000000782                . = ALIGN (0x2)
  *(.text.*)
  .text.process_record_user
-                0x0000000000000782      0x22a .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
+                0x0000000000000782      0x26c .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
                 0x0000000000000782                process_record_user
  .text.keycode_at_keymap_location_raw
-                0x00000000000009ac       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
-                0x00000000000009ac                keycode_at_keymap_location_raw
+                0x00000000000009ee       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
+                0x00000000000009ee                keycode_at_keymap_location_raw
  .text.keycode_at_keymap_location
-                0x00000000000009e2        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
-                0x00000000000009e2                keycode_at_keymap_location
+                0x0000000000000a24        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
+                0x0000000000000a24                keycode_at_keymap_location
  .text.extract_mod_bits
-                0x00000000000009e8       0x5a .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x00000000000009e8                extract_mod_bits
+                0x0000000000000a2a       0x5a .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000a2a                extract_mod_bits
  .text.do_code16
-                0x0000000000000a42       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000a42                do_code16
+                0x0000000000000a84       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000a84                do_code16
  .text.register_code16
-                0x0000000000000a56       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000a56                register_code16
+                0x0000000000000a98       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000a98                register_code16
  .text.unregister_code16
-                0x0000000000000a84       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000a84                unregister_code16
+                0x0000000000000ac6       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000ac6                unregister_code16
  .text.tap_code16_delay
-                0x0000000000000ab2       0x34 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000ab2                tap_code16_delay
+                0x0000000000000af4       0x34 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000af4                tap_code16_delay
  .text.tap_code16
-                0x0000000000000ae6       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000ae6                tap_code16
+                0x0000000000000b28       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b28                tap_code16
  .text.process_action_kb
-                0x0000000000000afc        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000afc                process_action_kb
+                0x0000000000000b3e        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b3e                process_action_kb
  .text.process_record_user
-                0x0000000000000b00        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b42        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
  .text.pre_process_record_user
-                0x0000000000000b04        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b04                pre_process_record_user
+                0x0000000000000b46        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b46                pre_process_record_user
  .text.pre_process_record_kb
-                0x0000000000000b0a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b0a                pre_process_record_kb
+                0x0000000000000b4c        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b4c                pre_process_record_kb
  .text.process_record_kb
-                0x0000000000000b10        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b10                process_record_kb
+                0x0000000000000b52        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b52                process_record_kb
  .text.post_process_record_user
-                0x0000000000000b16        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b16                post_process_record_user
+                0x0000000000000b58        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b58                post_process_record_user
  .text.post_process_record_kb
-                0x0000000000000b18        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b18                post_process_record_kb
+                0x0000000000000b5a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b5a                post_process_record_kb
  .text.get_event_keycode
-                0x0000000000000b1e       0x5c .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b1e                get_event_keycode
+                0x0000000000000b60       0x5c .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000b60                get_event_keycode
  .text.get_record_keycode
-                0x0000000000000b7a       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b7a                get_record_keycode
+                0x0000000000000bbc       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000bbc                get_record_keycode
  .text.pre_process_record_quantum
-                0x0000000000000b90       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000b90                pre_process_record_quantum
+                0x0000000000000bd2       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000bd2                pre_process_record_quantum
  .text.post_process_record_quantum
-                0x0000000000000ba8       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000ba8                post_process_record_quantum
+                0x0000000000000bea       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000bea                post_process_record_quantum
  .text.shutdown_user
-                0x0000000000000bc0        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000bc0                shutdown_user
+                0x0000000000000c02        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000c02                shutdown_user
  .text.shutdown_quantum
-                0x0000000000000bc2       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000bc2                shutdown_quantum
+                0x0000000000000c04       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000c04                shutdown_quantum
  .text.reset_keyboard
-                0x0000000000000bde        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000bde                reset_keyboard
+                0x0000000000000c20        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000c20                reset_keyboard
  .text.soft_reset_keyboard
-                0x0000000000000be8        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000be8                soft_reset_keyboard
+                0x0000000000000c2a        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000c2a                soft_reset_keyboard
  .text.process_record_quantum
-                0x0000000000000bf2       0xe4 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000bf2                process_record_quantum
+                0x0000000000000c34       0xe4 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000c34                process_record_quantum
  .text.suspend_power_down_quantum
-                0x0000000000000cd6        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000cd6                suspend_power_down_quantum
+                0x0000000000000d18        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000d18                suspend_power_down_quantum
  .text.suspend_wakeup_init_quantum
-                0x0000000000000ce0        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
-                0x0000000000000ce0                suspend_wakeup_init_quantum
+                0x0000000000000d22        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+                0x0000000000000d22                suspend_wakeup_init_quantum
  .text.led_set_user
-                0x0000000000000cea        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000cea                led_set_user
+                0x0000000000000d2c        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d2c                led_set_user
  .text.led_update_user
-                0x0000000000000cec        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000cec                led_update_user
+                0x0000000000000d2e        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d2e                led_update_user
  .text.led_update_ports
-                0x0000000000000cf0        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000cf0                led_update_ports
+                0x0000000000000d32        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d32                led_update_ports
  .text.led_update_kb
-                0x0000000000000cf2       0x1e .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000cf2                led_update_kb
+                0x0000000000000d34       0x1e .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d34                led_update_kb
  .text.led_init_ports
-                0x0000000000000d10        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000d10                led_init_ports
- .text.led_set  0x0000000000000d12       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000d12                led_set
+                0x0000000000000d52        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d52                led_init_ports
+ .text.led_set  0x0000000000000d54       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d54                led_set
  .text.led_suspend
-                0x0000000000000d24        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000d24                led_suspend
+                0x0000000000000d66        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d66                led_suspend
  .text.led_wakeup
-                0x0000000000000d2c        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000d2c                led_wakeup
+                0x0000000000000d6e        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d6e                led_wakeup
  .text.led_task
-                0x0000000000000d36       0x32 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
-                0x0000000000000d36                led_task
+                0x0000000000000d78       0x32 .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+                0x0000000000000d78                led_task
  .text.action_exec
-                0x0000000000000d68       0x66 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000000d68                action_exec
+                0x0000000000000daa       0x66 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000000daa                action_exec
  .text.process_record_tap_hint
-                0x0000000000000dce       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000000dce                process_record_tap_hint
+                0x0000000000000e10       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000000e10                process_record_tap_hint
  .text.register_mouse
-                0x0000000000000de0       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000000de0                register_mouse
+                0x0000000000000e22       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000000e22                register_mouse
  .text.register_code
-                0x0000000000000df4      0x15e .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000000df4                register_code
+                0x0000000000000e36      0x15e .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000000e36                register_code
  .text.unregister_code
-                0x0000000000000f52       0xd8 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000000f52                unregister_code
+                0x0000000000000f94       0xd8 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000000f94                unregister_code
  .text.tap_code_delay
-                0x000000000000102a       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000102a                tap_code_delay
+                0x000000000000106c       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x000000000000106c                tap_code_delay
  .text.tap_code
-                0x000000000000105a       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000105a                tap_code
+                0x000000000000109c       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x000000000000109c                tap_code
  .text.register_mods
-                0x000000000000106e        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000106e                register_mods
+                0x00000000000010b0        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000010b0                register_mods
  .text.unregister_mods
-                0x000000000000107c        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000107c                unregister_mods
+                0x00000000000010be        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000010be                unregister_mods
  .text.process_action
-                0x000000000000108a      0x3f2 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000108a                process_action
+                0x00000000000010cc      0x3f2 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000010cc                process_action
  .text.process_record_handler
-                0x000000000000147c       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000147c                process_record_handler
+                0x00000000000014be       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000014be                process_record_handler
  .text.process_record
-                0x00000000000014ac       0x46 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x00000000000014ac                process_record
+                0x00000000000014ee       0x46 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000014ee                process_record
  .text.register_weak_mods
-                0x00000000000014f2        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x00000000000014f2                register_weak_mods
+                0x0000000000001534        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000001534                register_weak_mods
  .text.unregister_weak_mods
-                0x0000000000001500        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000001500                unregister_weak_mods
+                0x0000000000001542        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000001542                unregister_weak_mods
  .text.clear_keyboard_but_mods_and_keys
-                0x000000000000150e       0x22 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000150e                clear_keyboard_but_mods_and_keys
+                0x0000000000001550       0x22 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000001550                clear_keyboard_but_mods_and_keys
  .text.clear_keyboard_but_mods
-                0x0000000000001530       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000001530                clear_keyboard_but_mods
+                0x0000000000001572       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000001572                clear_keyboard_but_mods
  .text.clear_keyboard
-                0x0000000000001542        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000001542                clear_keyboard
+                0x0000000000001584        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x0000000000001584                clear_keyboard
  .text.is_tap_action
-                0x000000000000154c       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000154c                is_tap_action
+                0x000000000000158e       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x000000000000158e                is_tap_action
  .text.is_tap_record
-                0x0000000000001582       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x0000000000001582                is_tap_record
+                0x00000000000015c4       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000015c4                is_tap_record
  .text.debug_event
-                0x000000000000159c       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x000000000000159c                debug_event
+                0x00000000000015de       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000015de                debug_event
  .text.debug_record
-                0x00000000000015b0       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
-                0x00000000000015b0                debug_record
+                0x00000000000015f2       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+                0x00000000000015f2                debug_record
  .text.default_layer_debug
-                0x00000000000015c4        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015c4                default_layer_debug
+                0x0000000000001606        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001606                default_layer_debug
  .text.layer_state_set_user
-                0x00000000000015c6        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015c6                layer_state_set_user
+                0x0000000000001608        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001608                layer_state_set_user
  .text.default_layer_state_set_user
-                0x00000000000015c8        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015c8                default_layer_state_set_user
+                0x000000000000160a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000160a                default_layer_state_set_user
  .text.default_layer_state_set_kb
-                0x00000000000015ce        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015ce                default_layer_state_set_kb
+                0x0000000000001610        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001610                default_layer_state_set_kb
  .text.default_layer_state_set
-                0x00000000000015d4        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001616        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
  .text.default_layer_set
-                0x00000000000015e2        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015e2                default_layer_set
+                0x0000000000001624        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001624                default_layer_set
  .text.default_layer_or
-                0x00000000000015e8       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015e8                default_layer_or
+                0x000000000000162a       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000162a                default_layer_or
  .text.default_layer_and
-                0x00000000000015fa       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000015fa                default_layer_and
+                0x000000000000163c       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000163c                default_layer_and
  .text.default_layer_xor
-                0x000000000000160c       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x000000000000160c                default_layer_xor
+                0x000000000000164e       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000164e                default_layer_xor
  .text.layer_state_set_kb
-                0x000000000000161e        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x000000000000161e                layer_state_set_kb
+                0x0000000000001660        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001660                layer_state_set_kb
  .text.layer_state_set
-                0x0000000000001624        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001624                layer_state_set
+                0x0000000000001666        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001666                layer_state_set
  .text.layer_clear
-                0x0000000000001632        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001632                layer_clear
+                0x0000000000001674        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001674                layer_clear
  .text.layer_move
-                0x000000000000163c       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x000000000000163c                layer_move
+                0x000000000000167e       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000167e                layer_move
  .text.layer_on
-                0x0000000000001654       0x20 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001654                layer_on
+                0x0000000000001696       0x20 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001696                layer_on
  .text.layer_off
-                0x0000000000001674       0x24 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001674                layer_off
+                0x00000000000016b6       0x24 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x00000000000016b6                layer_off
  .text.layer_invert
-                0x0000000000001698       0x20 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001698                layer_invert
+                0x00000000000016da       0x20 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x00000000000016da                layer_invert
  .text.layer_or
-                0x00000000000016b8       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000016b8                layer_or
+                0x00000000000016fa       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x00000000000016fa                layer_or
  .text.layer_and
-                0x00000000000016ca       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000016ca                layer_and
+                0x000000000000170c       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000170c                layer_and
  .text.layer_xor
-                0x00000000000016dc       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000016dc                layer_xor
+                0x000000000000171e       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000171e                layer_xor
  .text.layer_debug
-                0x00000000000016ee        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000016ee                layer_debug
+                0x0000000000001730        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001730                layer_debug
  .text.update_source_layers_cache_impl
-                0x00000000000016f0       0x56 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000016f0                update_source_layers_cache_impl
+                0x0000000000001732       0x56 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001732                update_source_layers_cache_impl
  .text.read_source_layers_cache_impl
-                0x0000000000001746       0x4e .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001746                read_source_layers_cache_impl
+                0x0000000000001788       0x4e .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001788                read_source_layers_cache_impl
  .text.update_source_layers_cache
-                0x0000000000001794       0x24 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001794                update_source_layers_cache
+                0x00000000000017d6       0x24 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x00000000000017d6                update_source_layers_cache
  .text.read_source_layers_cache
-                0x00000000000017b8       0x24 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000017b8                read_source_layers_cache
+                0x00000000000017fa       0x24 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x00000000000017fa                read_source_layers_cache
  .text.layer_switch_get_layer
-                0x00000000000017dc       0x64 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x00000000000017dc                layer_switch_get_layer
+                0x000000000000181e       0x64 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x000000000000181e                layer_switch_get_layer
  .text.layer_switch_get_action
-                0x0000000000001840       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001840                layer_switch_get_action
+                0x0000000000001882       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001882                layer_switch_get_action
  .text.store_or_get_action
-                0x0000000000001856       0x46 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
-                0x0000000000001856                store_or_get_action
+                0x0000000000001898       0x46 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+                0x0000000000001898                store_or_get_action
  .text.debug_waiting_buffer
-                0x000000000000189c       0x44 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+                0x00000000000018de       0x44 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
  .text.debug_tapping_key
-                0x00000000000018e0       0x22 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+                0x0000000000001922       0x22 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
  .text.waiting_buffer_scan_tap
-                0x0000000000001902       0xb2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+                0x0000000000001944       0xb2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
  .text.waiting_buffer_typed.isra.2
-                0x00000000000019b4       0x40 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+                0x00000000000019f6       0x40 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
  .text.process_tapping
-                0x00000000000019f4      0x348 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+                0x0000000000001a36      0x348 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
  .text.action_tapping_process
-                0x0000000000001d3c      0x10a .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
-                0x0000000000001d3c                action_tapping_process
+                0x0000000000001d7e      0x10a .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+                0x0000000000001d7e                action_tapping_process
  .text.get_oneshot_layer
-                0x0000000000001e46        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e46                get_oneshot_layer
+                0x0000000000001e88        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001e88                get_oneshot_layer
  .text.get_oneshot_layer_state
-                0x0000000000001e52        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e52                get_oneshot_layer_state
+                0x0000000000001e94        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001e94                get_oneshot_layer_state
  .text.is_oneshot_layer_active
-                0x0000000000001e5a        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e5a                is_oneshot_layer_active
+                0x0000000000001e9c        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001e9c                is_oneshot_layer_active
  .text.get_mods
-                0x0000000000001e68        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e68                get_mods
+                0x0000000000001eaa        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001eaa                get_mods
  .text.add_mods
-                0x0000000000001e6e        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e6e                add_mods
+                0x0000000000001eb0        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001eb0                add_mods
  .text.del_mods
-                0x0000000000001e7a        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e7a                del_mods
+                0x0000000000001ebc        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001ebc                del_mods
  .text.set_mods
-                0x0000000000001e88        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e88                set_mods
+                0x0000000000001eca        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001eca                set_mods
  .text.clear_mods
-                0x0000000000001e8e        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e8e                clear_mods
+                0x0000000000001ed0        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001ed0                clear_mods
  .text.get_weak_mods
-                0x0000000000001e94        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e94                get_weak_mods
+                0x0000000000001ed6        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001ed6                get_weak_mods
  .text.add_weak_mods
-                0x0000000000001e9a        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001e9a                add_weak_mods
+                0x0000000000001edc        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001edc                add_weak_mods
  .text.del_weak_mods
-                0x0000000000001ea6        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ea6                del_weak_mods
+                0x0000000000001ee8        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001ee8                del_weak_mods
  .text.clear_weak_mods
-                0x0000000000001eb4        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001eb4                clear_weak_mods
+                0x0000000000001ef6        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001ef6                clear_weak_mods
  .text.get_oneshot_mods
-                0x0000000000001eba        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001eba                get_oneshot_mods
+                0x0000000000001efc        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001efc                get_oneshot_mods
  .text.oneshot_layer_changed_user
-                0x0000000000001ec0        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ec0                oneshot_layer_changed_user
+                0x0000000000001f02        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f02                oneshot_layer_changed_user
  .text.oneshot_mods_changed_user
-                0x0000000000001ec2        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ec2                oneshot_mods_changed_user
+                0x0000000000001f04        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f04                oneshot_mods_changed_user
  .text.oneshot_mods_changed_kb
-                0x0000000000001ec8        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ec8                oneshot_mods_changed_kb
+                0x0000000000001f0a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f0a                oneshot_mods_changed_kb
  .text.add_oneshot_mods
-                0x0000000000001ece       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ece                add_oneshot_mods
+                0x0000000000001f10       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f10                add_oneshot_mods
  .text.del_oneshot_mods
-                0x0000000000001ee6       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ee6                del_oneshot_mods
+                0x0000000000001f28       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f28                del_oneshot_mods
  .text.clear_oneshot_mods
-                0x0000000000001efe       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001efe                clear_oneshot_mods
+                0x0000000000001f40       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f40                clear_oneshot_mods
  .text.send_keyboard_report
-                0x0000000000001f12       0x82 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001f12                send_keyboard_report
+                0x0000000000001f54       0x82 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001f54                send_keyboard_report
  .text.oneshot_locked_mods_changed_user
-                0x0000000000001f94        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001f94                oneshot_locked_mods_changed_user
+                0x0000000000001fd6        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001fd6                oneshot_locked_mods_changed_user
  .text.oneshot_locked_mods_changed_kb
-                0x0000000000001f9a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001f9a                oneshot_locked_mods_changed_kb
+                0x0000000000001fdc        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001fdc                oneshot_locked_mods_changed_kb
  .text.del_oneshot_locked_mods
-                0x0000000000001fa0       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001fa0                del_oneshot_locked_mods
+                0x0000000000001fe2       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001fe2                del_oneshot_locked_mods
  .text.oneshot_layer_changed_kb
-                0x0000000000001fb8        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001fb8                oneshot_layer_changed_kb
+                0x0000000000001ffa        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000001ffa                oneshot_layer_changed_kb
  .text.set_oneshot_layer
-                0x0000000000001fbe       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001fbe                set_oneshot_layer
+                0x0000000000002000       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000002000                set_oneshot_layer
  .text.reset_oneshot_layer
-                0x0000000000001fee        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001fee                reset_oneshot_layer
+                0x0000000000002030        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000002030                reset_oneshot_layer
  .text.clear_oneshot_layer_state
-                0x0000000000001ffa       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000001ffa                clear_oneshot_layer_state
+                0x000000000000203c       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x000000000000203c                clear_oneshot_layer_state
  .text.oneshot_set
-                0x0000000000002028       0x2a .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000002028                oneshot_set
+                0x000000000000206a       0x2a .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x000000000000206a                oneshot_set
  .text.oneshot_toggle
-                0x0000000000002052       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000002052                oneshot_toggle
+                0x0000000000002094       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x0000000000002094                oneshot_toggle
  .text.oneshot_enable
-                0x0000000000002066        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x0000000000002066                oneshot_enable
+                0x00000000000020a8        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x00000000000020a8                oneshot_enable
  .text.oneshot_disable
-                0x000000000000206e        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
-                0x000000000000206e                oneshot_disable
+                0x00000000000020b0        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+                0x00000000000020b0                oneshot_disable
  .text.eeconfig_disable
-                0x0000000000002076        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x0000000000002076                eeconfig_disable
+                0x00000000000020b8        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x00000000000020b8                eeconfig_disable
  .text.eeconfig_is_enabled
-                0x0000000000002084       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x0000000000002084                eeconfig_is_enabled
+                0x00000000000020c6       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x00000000000020c6                eeconfig_is_enabled
  .text.eeconfig_read_debug
-                0x000000000000209a        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x000000000000209a                eeconfig_read_debug
+                0x00000000000020dc        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x00000000000020dc                eeconfig_read_debug
  .text.eeconfig_read_default_layer
-                0x00000000000020a4        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020a4                eeconfig_read_default_layer
+                0x00000000000020e6        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x00000000000020e6                eeconfig_read_default_layer
  .text.eeconfig_read_keymap
-                0x00000000000020ae        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020ae                eeconfig_read_keymap
+                0x00000000000020f0        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x00000000000020f0                eeconfig_read_keymap
  .text.eeconfig_update_keymap
-                0x00000000000020b8        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020b8                eeconfig_update_keymap
+                0x00000000000020fa        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x00000000000020fa                eeconfig_update_keymap
  .text.eeconfig_update_kb
-                0x00000000000020c4        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020c4                eeconfig_update_kb
+                0x0000000000002106        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x0000000000002106                eeconfig_update_kb
  .text.eeconfig_update_user
-                0x00000000000020d2        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020d2                eeconfig_update_user
+                0x0000000000002114        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x0000000000002114                eeconfig_update_user
  .text.eeconfig_init_user
-                0x00000000000020e0        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020e0                eeconfig_init_user
+                0x0000000000002122        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x0000000000002122                eeconfig_init_user
  .text.eeconfig_init_kb
-                0x00000000000020ec       0x10 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020ec                eeconfig_init_kb
+                0x000000000000212e       0x10 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x000000000000212e                eeconfig_init_kb
  .text.eeconfig_init_quantum
-                0x00000000000020fc       0xc4 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000020fc                eeconfig_init_quantum
+                0x000000000000213e       0xc4 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x000000000000213e                eeconfig_init_quantum
  .text.eeconfig_init
-                0x00000000000021c0        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000021c0                eeconfig_init
+                0x0000000000002202        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x0000000000002202                eeconfig_init
  .text.eeconfig_update_handedness
-                0x00000000000021c6        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
-                0x00000000000021c6                eeconfig_update_handedness
+                0x0000000000002208        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+                0x0000000000002208                eeconfig_update_handedness
  .text.generate_tick_event
-                0x00000000000021d2       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x0000000000002214       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
  .text.last_matrix_activity_trigger
-                0x000000000000221a       0x26 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000221a                last_matrix_activity_trigger
+                0x000000000000225c       0x26 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x000000000000225c                last_matrix_activity_trigger
  .text.matrix_can_read
-                0x0000000000002240        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002240                matrix_can_read
+                0x0000000000002282        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x0000000000002282                matrix_can_read
  .text.should_process_keypress
-                0x0000000000002244        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002244                should_process_keypress
+                0x0000000000002286        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x0000000000002286                should_process_keypress
  .text.housekeeping_task_user
-                0x000000000000224a        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000224a                housekeeping_task_user
+                0x000000000000228c        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x000000000000228c                housekeeping_task_user
  .text.housekeeping_task_kb
-                0x000000000000224c        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000224c                housekeeping_task_kb
+                0x000000000000228e        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x000000000000228e                housekeeping_task_kb
  .text.keyboard_post_init_user
-                0x0000000000002252        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002252                keyboard_post_init_user
+                0x0000000000002294        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x0000000000002294                keyboard_post_init_user
  .text.keyboard_post_init_kb
-                0x0000000000002258        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002258                keyboard_post_init_kb
+                0x000000000000229a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x000000000000229a                keyboard_post_init_kb
  .text.keyboard_pre_init_user
-                0x000000000000225e        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000225e                keyboard_pre_init_user
+                0x00000000000022a0        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022a0                keyboard_pre_init_user
  .text.keyboard_pre_init_kb
-                0x0000000000002264        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002264                keyboard_pre_init_kb
+                0x00000000000022a6        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022a6                keyboard_pre_init_kb
  .text.matrix_setup
-                0x000000000000226a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000226a                matrix_setup
+                0x00000000000022ac        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022ac                matrix_setup
  .text.keyboard_setup
-                0x0000000000002270       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002270                keyboard_setup
+                0x00000000000022b2       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022b2                keyboard_setup
  .text.housekeeping_task
-                0x0000000000002282        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x0000000000002282                housekeeping_task
+                0x00000000000022c4        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022c4                housekeeping_task
  .text.quantum_init
-                0x000000000000228c        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000228c                quantum_init
+                0x00000000000022ce        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022ce                quantum_init
  .text.keyboard_init
-                0x000000000000229a       0x26 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x000000000000229a                keyboard_init
+                0x00000000000022dc       0x26 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x00000000000022dc                keyboard_init
  .text.quantum_task
-                0x00000000000022c0        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x00000000000022c0                quantum_task
+                0x0000000000002302        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x0000000000002302                quantum_task
  .text.keyboard_task
-                0x00000000000022cc       0xd4 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
-                0x00000000000022cc                keyboard_task
+                0x000000000000230e       0xd4 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+                0x000000000000230e                keyboard_task
  .text.action_for_keycode
-                0x00000000000023a0      0x23a .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
-                0x00000000000023a0                action_for_keycode
+                0x00000000000023e2      0x23a .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
+                0x00000000000023e2                action_for_keycode
  .text.keymap_key_to_keycode
-                0x00000000000025da       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
-                0x00000000000025da                keymap_key_to_keycode
+                0x000000000000261c       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
+                0x000000000000261c                keymap_key_to_keycode
  .text.action_for_key
-                0x00000000000025f2        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
-                0x00000000000025f2                action_for_key
+                0x0000000000002634        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
+                0x0000000000002634                action_for_key
  .text.keycode_config
-                0x00000000000025fc      0x138 .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
-                0x00000000000025fc                keycode_config
+                0x000000000000263e      0x138 .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
+                0x000000000000263e                keycode_config
  .text.mod_config
-                0x0000000000002734       0x9e .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
-                0x0000000000002734                mod_config
+                0x0000000000002776       0x9e .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
+                0x0000000000002776                mod_config
  .text.sync_timer_init
-                0x00000000000027d2       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
-                0x00000000000027d2                sync_timer_init
+                0x0000000000002814       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
+                0x0000000000002814                sync_timer_init
  .text.sync_timer_update
-                0x00000000000027e4       0x3a .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
-                0x00000000000027e4                sync_timer_update
+                0x0000000000002826       0x3a .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
+                0x0000000000002826                sync_timer_update
  .text.sync_timer_read32
-                0x000000000000281e       0x34 .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
-                0x000000000000281e                sync_timer_read32
+                0x0000000000002860       0x34 .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
+                0x0000000000002860                sync_timer_read32
  .text.sendchar
-                0x0000000000002852        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/logging/sendchar.o
-                0x0000000000002852                sendchar
+                0x0000000000002894        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/logging/sendchar.o
+                0x0000000000002894                sendchar
  .text.bootmagic
-                0x0000000000002856        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
-                0x0000000000002856                bootmagic
- .text.magic    0x0000000000002858       0x3c .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
-                0x0000000000002858                magic
+                0x0000000000002898        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
+                0x0000000000002898                bootmagic
+ .text.magic    0x000000000000289a       0x3c .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
+                0x000000000000289a                magic
  .text.matrix_get_row
-                0x0000000000002894        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x0000000000002894                matrix_get_row
+                0x00000000000028d6        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028d6                matrix_get_row
  .text.matrix_print
-                0x00000000000028a0        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028a0                matrix_print
+                0x00000000000028e2        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028e2                matrix_print
  .text.matrix_io_delay
-                0x00000000000028a2        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028a2                matrix_io_delay
+                0x00000000000028e4        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028e4                matrix_io_delay
  .text.matrix_output_select_delay
-                0x00000000000028aa        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028aa                matrix_output_select_delay
+                0x00000000000028ec        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028ec                matrix_output_select_delay
  .text.matrix_output_unselect_delay
-                0x00000000000028ae        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028ae                matrix_output_unselect_delay
+                0x00000000000028f0        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028f0                matrix_output_unselect_delay
  .text.matrix_slave_scan_user
-                0x00000000000028b4        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028b4                matrix_slave_scan_user
+                0x00000000000028f6        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028f6                matrix_slave_scan_user
  .text.matrix_scan_user
-                0x00000000000028b6        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028b6                matrix_scan_user
+                0x00000000000028f8        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028f8                matrix_scan_user
  .text.matrix_scan_kb
-                0x00000000000028bc        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028bc                matrix_scan_kb
+                0x00000000000028fe        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x00000000000028fe                matrix_scan_kb
  .text.matrix_init_user
-                0x00000000000028c2        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028c2                matrix_init_user
+                0x0000000000002904        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x0000000000002904                matrix_init_user
  .text.matrix_init_kb
-                0x00000000000028c8        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028c8                matrix_init_kb
+                0x000000000000290a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x000000000000290a                matrix_init_kb
  .text.matrix_slave_scan_kb
-                0x00000000000028ce        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028ce                matrix_slave_scan_kb
+                0x0000000000002910        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x0000000000002910                matrix_slave_scan_kb
  .text.matrix_post_scan
-                0x00000000000028d4       0xb6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
-                0x00000000000028d4                matrix_post_scan
+                0x0000000000002916       0xb6 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+                0x0000000000002916                matrix_post_scan
  .text.setPinInputHigh_atomic
-                0x000000000000298a       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+                0x00000000000029cc       0x2e .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
  .text.matrix_init_pins
-                0x00000000000029b8       0x40 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
-                0x00000000000029b8                matrix_init_pins
+                0x00000000000029fa       0x40 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+                0x00000000000029fa                matrix_init_pins
  .text.matrix_read_cols_on_row
-                0x00000000000029f8       0xbc .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
-                0x00000000000029f8                matrix_read_cols_on_row
+                0x0000000000002a3a       0xbc .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+                0x0000000000002a3a                matrix_read_cols_on_row
  .text.matrix_init
-                0x0000000000002ab4       0x4a .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
-                0x0000000000002ab4                matrix_init
+                0x0000000000002af6       0x4a .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+                0x0000000000002af6                matrix_init
  .text.matrix_scan
-                0x0000000000002afe       0x7c .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
-                0x0000000000002afe                matrix_scan
+                0x0000000000002b40       0x7c .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+                0x0000000000002b40                matrix_scan
  .text.debounce_init
-                0x0000000000002b7a        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
-                0x0000000000002b7a                debounce_init
+                0x0000000000002bbc        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
+                0x0000000000002bbc                debounce_init
  .text.debounce
-                0x0000000000002b7c       0x72 .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
-                0x0000000000002b7c                debounce
+                0x0000000000002bbe       0x72 .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
+                0x0000000000002bbe                debounce
  .text.is_keyboard_master
-                0x0000000000002bee       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
-                0x0000000000002bee                is_keyboard_master
+                0x0000000000002c30       0x30 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+                0x0000000000002c30                is_keyboard_master
  .text.is_keyboard_left
-                0x0000000000002c1e        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
-                0x0000000000002c1e                is_keyboard_left
+                0x0000000000002c60        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+                0x0000000000002c60                is_keyboard_left
  .text.split_pre_init
-                0x0000000000002c24       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
-                0x0000000000002c24                split_pre_init
+                0x0000000000002c66       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+                0x0000000000002c66                split_pre_init
  .text.split_post_init
-                0x0000000000002c38        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
-                0x0000000000002c38                split_post_init
+                0x0000000000002c7a        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+                0x0000000000002c7a                split_post_init
  .text.is_transport_connected
-                0x0000000000002c46        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
-                0x0000000000002c46                is_transport_connected
+                0x0000000000002c88        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+                0x0000000000002c88                is_transport_connected
  .text.transport_master_if_connected
-                0x0000000000002c54       0x70 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
-                0x0000000000002c54                transport_master_if_connected
+                0x0000000000002c96       0x70 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+                0x0000000000002c96                transport_master_if_connected
  .text.transport_master_init
-                0x0000000000002cc4        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
-                0x0000000000002cc4                transport_master_init
+                0x0000000000002d06        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+                0x0000000000002d06                transport_master_init
  .text.transport_slave_init
-                0x0000000000002cca        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
-                0x0000000000002cca                transport_slave_init
+                0x0000000000002d0c        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+                0x0000000000002d0c                transport_slave_init
  .text.transport_execute_transaction
-                0x0000000000002cd0       0x90 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
-                0x0000000000002cd0                transport_execute_transaction
+                0x0000000000002d12       0x90 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+                0x0000000000002d12                transport_execute_transaction
  .text.transport_master
-                0x0000000000002d60        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
-                0x0000000000002d60                transport_master
+                0x0000000000002da2        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+                0x0000000000002da2                transport_master
  .text.transport_slave
-                0x0000000000002d66        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
-                0x0000000000002d66                transport_slave
+                0x0000000000002da8        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+                0x0000000000002da8                transport_slave
  .text.sync_timer_handlers_master
-                0x0000000000002d6c       0x80 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+                0x0000000000002dae       0x80 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
  .text.transaction_handler_master.isra.1
-                0x0000000000002dec       0x6a .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+                0x0000000000002e2e       0x6a .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
  .text.rgblight_handlers_master
-                0x0000000000002e56       0x7c .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+                0x0000000000002e98       0x7c .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
  .text.slave_matrix_handlers_master
-                0x0000000000002ed2       0xf4 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+                0x0000000000002f14       0xf4 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
  .text.transactions_master
-                0x0000000000002fc6       0x42 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
-                0x0000000000002fc6                transactions_master
+                0x0000000000003008       0x42 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+                0x0000000000003008                transactions_master
  .text.transactions_slave
-                0x0000000000003008       0x96 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
-                0x0000000000003008                transactions_slave
+                0x000000000000304a       0x96 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+                0x000000000000304a                transactions_slave
  .text.protocol_init
-                0x000000000000309e        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
-                0x000000000000309e                protocol_init
+                0x00000000000030e0        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
+                0x00000000000030e0                protocol_init
  .text.protocol_task
-                0x00000000000030ac        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
-                0x00000000000030ac                protocol_task
+                0x00000000000030ee        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
+                0x00000000000030ee                protocol_task
  .text.startup.main
-                0x00000000000030ba       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
-                0x00000000000030ba                main
+                0x00000000000030fc       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
+                0x00000000000030fc                main
  .text.print_set_sendchar
-                0x00000000000030d4        0xa .build/obj_redox_rev1_base_ad_rev3/platforms/avr/printf.o
-                0x00000000000030d4                print_set_sendchar
+                0x0000000000003116        0xa .build/obj_redox_rev1_base_ad_rev3/platforms/avr/printf.o
+                0x0000000000003116                print_set_sendchar
  .text.times_inv_sqrt2
-                0x00000000000030de       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x0000000000003120       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
  .text.move_unit
-                0x00000000000030fa       0x7e .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x000000000000313c       0x7e .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
  .text.wheel_unit
-                0x0000000000003178       0x72 .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x00000000000031ba       0x72 .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
  .text.mousekey_on
-                0x00000000000031ea       0xb6 .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
-                0x00000000000031ea                mousekey_on
+                0x000000000000322c       0xb6 .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x000000000000322c                mousekey_on
  .text.mousekey_off
-                0x00000000000032a0       0xee .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
-                0x00000000000032a0                mousekey_off
+                0x00000000000032e2       0xee .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x00000000000032e2                mousekey_off
  .text.mousekey_send
-                0x000000000000338e       0x3e .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
-                0x000000000000338e                mousekey_send
+                0x00000000000033d0       0x3e .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x00000000000033d0                mousekey_send
  .text.mousekey_clear
-                0x00000000000033cc       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
-                0x00000000000033cc                mousekey_clear
+                0x000000000000340e       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x000000000000340e                mousekey_clear
  .text.should_mousekey_report_send
-                0x00000000000033e8       0x28 .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
-                0x00000000000033e8                should_mousekey_report_send
+                0x000000000000342a       0x28 .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x000000000000342a                should_mousekey_report_send
  .text.mousekey_task
-                0x0000000000003410      0x1dc .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
-                0x0000000000003410                mousekey_task
+                0x0000000000003452      0x1dc .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+                0x0000000000003452                mousekey_task
  .text.hsv_to_rgb_impl
-                0x00000000000035ec      0x11c .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
-                0x00000000000035ec                hsv_to_rgb_impl
+                0x000000000000362e      0x11c .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
+                0x000000000000362e                hsv_to_rgb_impl
  .text.hsv_to_rgb
-                0x0000000000003708        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
-                0x0000000000003708                hsv_to_rgb
+                0x000000000000374a        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
+                0x000000000000374a                hsv_to_rgb
  .text.rgblight_hsv_to_rgb
-                0x0000000000003710        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003710                rgblight_hsv_to_rgb
+                0x0000000000003752        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003752                rgblight_hsv_to_rgb
  .text.sethsv_raw
-                0x0000000000003716       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003716                sethsv_raw
+                0x0000000000003758       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003758                sethsv_raw
  .text.rgblight_check_config
-                0x0000000000003732       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003732                rgblight_check_config
+                0x0000000000003774       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003774                rgblight_check_config
  .text.eeconfig_read_rgblight
-                0x0000000000003748       0x64 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003748                eeconfig_read_rgblight
+                0x000000000000378a       0x64 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x000000000000378a                eeconfig_read_rgblight
  .text.eeconfig_update_rgblight
-                0x00000000000037ac       0x4c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x00000000000037ac                eeconfig_update_rgblight
+                0x00000000000037ee       0x4c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000037ee                eeconfig_update_rgblight
  .text.eeconfig_update_rgblight_default
-                0x00000000000037f8       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x00000000000037f8                eeconfig_update_rgblight_default
+                0x000000000000383a       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x000000000000383a                eeconfig_update_rgblight_default
  .text.rgblight_increase_speed_helper
-                0x000000000000382e       0x38 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x000000000000382e                rgblight_increase_speed_helper
+                0x0000000000003870       0x38 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003870                rgblight_increase_speed_helper
  .text.rgblight_increase_speed
-                0x0000000000003866        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003866                rgblight_increase_speed
+                0x00000000000038a8        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000038a8                rgblight_increase_speed
  .text.rgblight_decrease_speed_helper
-                0x000000000000386e       0x38 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x000000000000386e                rgblight_decrease_speed_helper
+                0x00000000000038b0       0x38 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000038b0                rgblight_decrease_speed_helper
  .text.rgblight_decrease_speed
-                0x00000000000038a6        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x00000000000038a6                rgblight_decrease_speed
+                0x00000000000038e8        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000038e8                rgblight_decrease_speed
  .text.rgblight_call_driver
-                0x00000000000038ae        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x00000000000038ae                rgblight_call_driver
+                0x00000000000038f0        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000038f0                rgblight_call_driver
  .text.rgblight_set
-                0x00000000000038b6       0x4a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x00000000000038b6                rgblight_set
+                0x00000000000038f8       0x4a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000038f8                rgblight_set
  .text.rgblight_disable
-                0x0000000000003900       0x2c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003900                rgblight_disable
+                0x0000000000003942       0x2c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003942                rgblight_disable
  .text.rgblight_disable_noeeprom
-                0x000000000000392c       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x000000000000392c                rgblight_disable_noeeprom
+                0x000000000000396e       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x000000000000396e                rgblight_disable_noeeprom
  .text.rgblight_setrgb
-                0x0000000000003946       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003946                rgblight_setrgb
+                0x0000000000003988       0x36 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003988                rgblight_setrgb
  .text.rgblight_sethsv_eeprom_helper
-                0x000000000000397c       0x9e .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x000000000000397c                rgblight_sethsv_eeprom_helper
+                0x00000000000039be       0x9e .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x00000000000039be                rgblight_sethsv_eeprom_helper
  .text.rgblight_increase_hue_helper
-                0x0000000000003a1a       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a1a                rgblight_increase_hue_helper
+                0x0000000000003a5c       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003a5c                rgblight_increase_hue_helper
  .text.rgblight_increase_hue
-                0x0000000000003a30        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a30                rgblight_increase_hue
+                0x0000000000003a72        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003a72                rgblight_increase_hue
  .text.rgblight_decrease_hue_helper
-                0x0000000000003a38       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a38                rgblight_decrease_hue_helper
+                0x0000000000003a7a       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003a7a                rgblight_decrease_hue_helper
  .text.rgblight_decrease_hue
-                0x0000000000003a4e        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a4e                rgblight_decrease_hue
+                0x0000000000003a90        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003a90                rgblight_decrease_hue
  .text.rgblight_increase_sat_helper
-                0x0000000000003a56       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a56                rgblight_increase_sat_helper
+                0x0000000000003a98       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003a98                rgblight_increase_sat_helper
  .text.rgblight_increase_sat
-                0x0000000000003a70        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a70                rgblight_increase_sat
+                0x0000000000003ab2        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003ab2                rgblight_increase_sat
  .text.rgblight_decrease_sat_helper
-                0x0000000000003a78       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a78                rgblight_decrease_sat_helper
+                0x0000000000003aba       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003aba                rgblight_decrease_sat_helper
  .text.rgblight_decrease_sat
-                0x0000000000003a92        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a92                rgblight_decrease_sat
+                0x0000000000003ad4        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003ad4                rgblight_decrease_sat
  .text.rgblight_increase_val_helper
-                0x0000000000003a9a       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003a9a                rgblight_increase_val_helper
+                0x0000000000003adc       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003adc                rgblight_increase_val_helper
  .text.rgblight_increase_val
-                0x0000000000003ab4        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003ab4                rgblight_increase_val
+                0x0000000000003af6        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003af6                rgblight_increase_val
  .text.rgblight_decrease_val_helper
-                0x0000000000003abc       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003abc                rgblight_decrease_val_helper
+                0x0000000000003afe       0x1a .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003afe                rgblight_decrease_val_helper
  .text.rgblight_decrease_val
-                0x0000000000003ad6        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003ad6                rgblight_decrease_val
+                0x0000000000003b18        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003b18                rgblight_decrease_val
  .text.rgblight_sethsv_noeeprom
-                0x0000000000003ade        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003ade                rgblight_sethsv_noeeprom
+                0x0000000000003b20        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003b20                rgblight_sethsv_noeeprom
  .text.rgblight_mode_eeprom_helper
-                0x0000000000003ae6       0x50 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003ae6                rgblight_mode_eeprom_helper
+                0x0000000000003b28       0x50 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003b28                rgblight_mode_eeprom_helper
  .text.rgblight_step_helper
-                0x0000000000003b36        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b36                rgblight_step_helper
+                0x0000000000003b78        0xa .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003b78                rgblight_step_helper
  .text.rgblight_step
-                0x0000000000003b40        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b40                rgblight_step
+                0x0000000000003b82        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003b82                rgblight_step
  .text.rgblight_step_reverse_helper
-                0x0000000000003b48       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b48                rgblight_step_reverse_helper
+                0x0000000000003b8a       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003b8a                rgblight_step_reverse_helper
  .text.rgblight_step_reverse
-                0x0000000000003b5e        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b5e                rgblight_step_reverse
+                0x0000000000003ba0        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003ba0                rgblight_step_reverse
  .text.rgblight_mode
-                0x0000000000003b66        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b66                rgblight_mode
+                0x0000000000003ba8        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003ba8                rgblight_mode
  .text.rgblight_enable
-                0x0000000000003b6e       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b6e                rgblight_enable
+                0x0000000000003bb0       0x12 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003bb0                rgblight_enable
  .text.rgblight_toggle
-                0x0000000000003b80       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b80                rgblight_toggle
+                0x0000000000003bc2       0x14 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003bc2                rgblight_toggle
  .text.rgblight_mode_noeeprom
-                0x0000000000003b94        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b94                rgblight_mode_noeeprom
+                0x0000000000003bd6        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003bd6                rgblight_mode_noeeprom
  .text.rgblight_init
-                0x0000000000003b9c       0x8c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003b9c                rgblight_init
+                0x0000000000003bde       0x8c .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003bde                rgblight_init
  .text.rgblight_clear_change_flags
-                0x0000000000003c28        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003c28                rgblight_clear_change_flags
+                0x0000000000003c6a        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003c6a                rgblight_clear_change_flags
  .text.rgblight_get_syncinfo
-                0x0000000000003c2e       0x26 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003c2e                rgblight_get_syncinfo
+                0x0000000000003c70       0x26 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003c70                rgblight_get_syncinfo
  .text.rgblight_update_sync
-                0x0000000000003c54       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
-                0x0000000000003c54                rgblight_update_sync
+                0x0000000000003c96       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+                0x0000000000003c96                rgblight_update_sync
  .text.handleKeycodeRGB
-                0x0000000000003c9c        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
+                0x0000000000003cde        0xe .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
  .text.process_rgb
-                0x0000000000003caa       0xac .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
-                0x0000000000003caa                process_rgb
+                0x0000000000003cec       0xac .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
+                0x0000000000003cec                process_rgb
  .text.ws2812_setleds
-                0x0000000000003d56       0x56 .build/obj_redox_rev1_base_ad_rev3/ws2812_bitbang.o
-                0x0000000000003d56                ws2812_setleds
+                0x0000000000003d98       0x56 .build/obj_redox_rev1_base_ad_rev3/ws2812_bitbang.o
+                0x0000000000003d98                ws2812_setleds
  .text.crc_init
-                0x0000000000003dac        0x2 .build/obj_redox_rev1_base_ad_rev3/crc.o
-                0x0000000000003dac                crc_init
- .text.crc8     0x0000000000003dae       0x2e .build/obj_redox_rev1_base_ad_rev3/crc.o
-                0x0000000000003dae                crc8
+                0x0000000000003dee        0x2 .build/obj_redox_rev1_base_ad_rev3/crc.o
+                0x0000000000003dee                crc_init
+ .text.crc8     0x0000000000003df0       0x2e .build/obj_redox_rev1_base_ad_rev3/crc.o
+                0x0000000000003df0                crc8
  .text.process_unicode
-                0x0000000000003ddc       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode.o
-                0x0000000000003ddc                process_unicode
+                0x0000000000003e1e       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode.o
+                0x0000000000003e1e                process_unicode
  .text.process_unicode_common
-                0x0000000000003df8       0x6e .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode_common.o
-                0x0000000000003df8                process_unicode_common
+                0x0000000000003e3a       0x6e .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode_common.o
+                0x0000000000003e3a                process_unicode_common
  .text.send_nibble_wrapper
-                0x0000000000003e66       0x2a .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003ea8       0x2a .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
  .text.unicode_input_mode_set_user
-                0x0000000000003e90        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003e90                unicode_input_mode_set_user
+                0x0000000000003ed2        0x2 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003ed2                unicode_input_mode_set_user
  .text.unicode_input_mode_set_kb
-                0x0000000000003e92        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003e92                unicode_input_mode_set_kb
+                0x0000000000003ed4        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003ed4                unicode_input_mode_set_kb
  .text.cycle_unicode_input_mode
-                0x0000000000003e98       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003eda       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
  .text.unicode_input_mode_init
-                0x0000000000003ee0       0x3a .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003ee0                unicode_input_mode_init
+                0x0000000000003f22       0x3a .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003f22                unicode_input_mode_init
  .text.set_unicode_input_mode
-                0x0000000000003f1a       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003f1a                set_unicode_input_mode
+                0x0000000000003f5c       0x1c .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003f5c                set_unicode_input_mode
  .text.unicode_input_mode_step
-                0x0000000000003f36        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003f36                unicode_input_mode_step
+                0x0000000000003f78        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003f78                unicode_input_mode_step
  .text.unicode_input_mode_step_reverse
-                0x0000000000003f3e        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003f3e                unicode_input_mode_step_reverse
+                0x0000000000003f80        0x8 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003f80                unicode_input_mode_step_reverse
  .text.unicode_input_start
-                0x0000000000003f46       0xac .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003f46                unicode_input_start
+                0x0000000000003f88       0xac .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000003f88                unicode_input_start
  .text.unicode_input_finish
-                0x0000000000003ff2       0x64 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000003ff2                unicode_input_finish
+                0x0000000000004034       0x64 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000004034                unicode_input_finish
  .text.register_hex32
-                0x0000000000004056       0x8e .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x0000000000004056                register_hex32
+                0x0000000000004098       0x8e .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000004098                register_hex32
  .text.register_unicode
-                0x00000000000040e4       0x9e .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
-                0x00000000000040e4                register_unicode
+                0x0000000000004126       0x9e .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+                0x0000000000004126                register_unicode
  .text.process_magic
-                0x0000000000004182      0x1d4 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_magic.o
-                0x0000000000004182                process_magic
+                0x00000000000041c4      0x1d4 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_magic.o
+                0x00000000000041c4                process_magic
  .text.send_char
-                0x0000000000004356       0xba .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
-                0x0000000000004356                send_char
+                0x0000000000004398       0xba .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
+                0x0000000000004398                send_char
  .text.send_nibble
-                0x0000000000004410       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
-                0x0000000000004410                send_nibble
+                0x0000000000004452       0x16 .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
+                0x0000000000004452                send_nibble
  .text.send_string_with_delay_P
-                0x0000000000004426       0xd6 .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
-                0x0000000000004426                send_string_with_delay_P
+                0x0000000000004468       0xd6 .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
+                0x0000000000004468                send_string_with_delay_P
  .text.mousekey_console
-                0x00000000000044fc      0x104 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+                0x000000000000453e      0x104 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
  .text.command_common
-                0x0000000000004600      0x13c .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+                0x0000000000004642      0x13c .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
  .text.command_console_extra
-                0x000000000000473c        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
-                0x000000000000473c                command_console_extra
+                0x000000000000477e        0x4 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+                0x000000000000477e                command_console_extra
  .text.command_extra
-                0x0000000000004740        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
-                0x0000000000004740                command_extra
+                0x0000000000004782        0x6 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+                0x0000000000004782                command_extra
  .text.command_proc
-                0x0000000000004746       0x92 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
-                0x0000000000004746                command_proc
+                0x0000000000004788       0x92 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+                0x0000000000004788                command_proc
  .text.process_grave_esc
-                0x00000000000047d8       0x62 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_grave_esc.o
-                0x00000000000047d8                process_grave_esc
+                0x000000000000481a       0x62 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_grave_esc.o
+                0x000000000000481a                process_grave_esc
  .text.perform_space_cadet
-                0x000000000000483a       0xd2 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
-                0x000000000000483a                perform_space_cadet
+                0x000000000000487c       0xd2 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
+                0x000000000000487c                perform_space_cadet
  .text.process_space_cadet
-                0x000000000000490c       0x86 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
-                0x000000000000490c                process_space_cadet
+                0x000000000000494e       0x86 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
+                0x000000000000494e                process_space_cadet
  .text._process_tap_dance_action_fn
-                0x0000000000004992        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+                0x00000000000049d4        0xc .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
  .text.process_tap_dance_action_on_reset
-                0x000000000000499e       0x32 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+                0x00000000000049e0       0x32 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
  .text.process_tap_dance_action_on_dance_finished
-                0x00000000000049d0       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+                0x0000000000004a12       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
  .text.preprocess_tap_dance
-                0x0000000000004a18       0x56 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
-                0x0000000000004a18                preprocess_tap_dance
+                0x0000000000004a5a       0x56 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+                0x0000000000004a5a                preprocess_tap_dance
  .text.process_tap_dance
-                0x0000000000004a6e       0xd8 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
-                0x0000000000004a6e                process_tap_dance
+                0x0000000000004ab0       0xd8 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+                0x0000000000004ab0                process_tap_dance
  .text.tap_dance_task
-                0x0000000000004b46       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
-                0x0000000000004b46                tap_dance_task
+                0x0000000000004b88       0x48 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+                0x0000000000004b88                tap_dance_task
  .text.host_set_driver
-                0x0000000000004b8e        0xa .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004b8e                host_set_driver
+                0x0000000000004bd0        0xa .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004bd0                host_set_driver
  .text.host_keyboard_leds
-                0x0000000000004b98       0x28 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004b98                host_keyboard_leds
+                0x0000000000004bda       0x28 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004bda                host_keyboard_leds
  .text.host_keyboard_led_state
-                0x0000000000004bc0        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004bc0                host_keyboard_led_state
+                0x0000000000004c02        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004c02                host_keyboard_led_state
  .text.host_keyboard_send
-                0x0000000000004bc6       0x16 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004bc6                host_keyboard_send
+                0x0000000000004c08       0x16 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004c08                host_keyboard_send
  .text.host_mouse_send
-                0x0000000000004bdc       0x1c .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004bdc                host_mouse_send
+                0x0000000000004c1e       0x1c .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004c1e                host_mouse_send
  .text.host_system_send
-                0x0000000000004bf8       0x4a .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004bf8                host_system_send
+                0x0000000000004c3a       0x4a .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004c3a                host_system_send
  .text.host_consumer_send
-                0x0000000000004c42       0x4a .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
-                0x0000000000004c42                host_consumer_send
+                0x0000000000004c84       0x4a .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+                0x0000000000004c84                host_consumer_send
  .text.has_anykey
-                0x0000000000004c8c       0x18 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004c8c                has_anykey
+                0x0000000000004cce       0x18 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004cce                has_anykey
  .text.is_key_pressed
-                0x0000000000004ca4       0x1e .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004ca4                is_key_pressed
+                0x0000000000004ce6       0x1e .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004ce6                is_key_pressed
  .text.add_key_byte
-                0x0000000000004cc2       0x34 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004cc2                add_key_byte
+                0x0000000000004d04       0x34 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004d04                add_key_byte
  .text.del_key_byte
-                0x0000000000004cf6       0x1a .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004cf6                del_key_byte
+                0x0000000000004d38       0x1a .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004d38                del_key_byte
  .text.add_key_to_report
-                0x0000000000004d10        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004d10                add_key_to_report
+                0x0000000000004d52        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004d52                add_key_to_report
  .text.del_key_from_report
-                0x0000000000004d16        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004d16                del_key_from_report
+                0x0000000000004d58        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004d58                del_key_from_report
  .text.clear_keys_from_report
-                0x0000000000004d1c        0xe .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004d1c                clear_keys_from_report
+                0x0000000000004d5e        0xe .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004d5e                clear_keys_from_report
  .text.has_mouse_report_changed
-                0x0000000000004d2a       0x5c .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
-                0x0000000000004d2a                has_mouse_report_changed
+                0x0000000000004d6c       0x5c .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+                0x0000000000004d6c                has_mouse_report_changed
  .text.notify_usb_device_state_change_user
-                0x0000000000004d86        0x2 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004d86                notify_usb_device_state_change_user
+                0x0000000000004dc8        0x2 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004dc8                notify_usb_device_state_change_user
  .text.notify_usb_device_state_change_kb
-                0x0000000000004d88        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004d88                notify_usb_device_state_change_kb
+                0x0000000000004dca        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004dca                notify_usb_device_state_change_kb
  .text.usb_device_state_set_suspend
-                0x0000000000004d8e        0xc .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004d8e                usb_device_state_set_suspend
+                0x0000000000004dd0        0xc .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004dd0                usb_device_state_set_suspend
  .text.usb_device_state_set_resume
-                0x0000000000004d9a       0x14 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004d9a                usb_device_state_set_resume
+                0x0000000000004ddc       0x14 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004ddc                usb_device_state_set_resume
  .text.usb_device_state_set_configuration
-                0x0000000000004dae        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004dae                usb_device_state_set_configuration
+                0x0000000000004df0        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004df0                usb_device_state_set_configuration
  .text.usb_device_state_init
-                0x0000000000004db4        0xc .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004db4                usb_device_state_init
+                0x0000000000004df6        0xc .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004df6                usb_device_state_init
  .text.usb_device_state_set_reset
-                0x0000000000004dc0        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
-                0x0000000000004dc0                usb_device_state_set_reset
+                0x0000000000004e02        0x6 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+                0x0000000000004e02                usb_device_state_set_reset
  .text.suspend_wakeup_init_user
-                0x0000000000004dc6        0x2 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004dc6                suspend_wakeup_init_user
+                0x0000000000004e08        0x2 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e08                suspend_wakeup_init_user
  .text.suspend_power_down_user
-                0x0000000000004dc8        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004dc8                suspend_power_down_user
+                0x0000000000004e0a        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e0a                suspend_power_down_user
  .text.suspend_power_down_kb
-                0x0000000000004dce        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004dce                suspend_power_down_kb
+                0x0000000000004e10        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e10                suspend_power_down_kb
  .text.matrix_power_down
-                0x0000000000004dd4        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004dd4                matrix_power_down
+                0x0000000000004e16        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e16                matrix_power_down
  .text.matrix_power_up
-                0x0000000000004dda        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004dda                matrix_power_up
+                0x0000000000004e1c        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e1c                matrix_power_up
  .text.suspend_wakeup_init_kb
-                0x0000000000004de0        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004de0                suspend_wakeup_init_kb
+                0x0000000000004e22        0x6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e22                suspend_wakeup_init_kb
  .text.suspend_wakeup_condition
-                0x0000000000004de6       0x28 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
-                0x0000000000004de6                suspend_wakeup_condition
+                0x0000000000004e28       0x28 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+                0x0000000000004e28                suspend_wakeup_condition
  .text.platform_setup
-                0x0000000000004e0e        0xe .build/obj_redox_rev1_base_ad_rev3/platforms/avr/platform.o
-                0x0000000000004e0e                platform_setup
+                0x0000000000004e50        0xe .build/obj_redox_rev1_base_ad_rev3/platforms/avr/platform.o
+                0x0000000000004e50                platform_setup
  .text.__vector_12
-                0x0000000000004e1c       0x52 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
-                0x0000000000004e1c                __vector_12
+                0x0000000000004e5e       0x52 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
+                0x0000000000004e5e                __vector_12
  .text.suspend_power_down
-                0x0000000000004e6e       0x56 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
-                0x0000000000004e6e                suspend_power_down
+                0x0000000000004eb0       0x56 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
+                0x0000000000004eb0                suspend_power_down
  .text.suspend_wakeup_init
-                0x0000000000004ec4        0xa .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
-                0x0000000000004ec4                suspend_wakeup_init
+                0x0000000000004f06        0xa .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
+                0x0000000000004f06                suspend_wakeup_init
  .text.timer_init
-                0x0000000000004ece       0x12 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
-                0x0000000000004ece                timer_init
+                0x0000000000004f10       0x12 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+                0x0000000000004f10                timer_init
  .text.timer_read
-                0x0000000000004ee0       0x18 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
-                0x0000000000004ee0                timer_read
+                0x0000000000004f22       0x18 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+                0x0000000000004f22                timer_read
  .text.timer_read32
-                0x0000000000004ef8       0x18 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
-                0x0000000000004ef8                timer_read32
+                0x0000000000004f3a       0x18 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+                0x0000000000004f3a                timer_read32
  .text.timer_elapsed
-                0x0000000000004f10       0x1e .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
-                0x0000000000004f10                timer_elapsed
+                0x0000000000004f52       0x1e .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+                0x0000000000004f52                timer_elapsed
  .text.timer_elapsed32
-                0x0000000000004f2e       0x38 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
-                0x0000000000004f2e                timer_elapsed32
+                0x0000000000004f70       0x38 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+                0x0000000000004f70                timer_elapsed32
  .text.__vector_21
-                0x0000000000004f66       0x4c .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
-                0x0000000000004f66                __vector_21
+                0x0000000000004fa8       0x4c .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+                0x0000000000004fa8                __vector_21
  .text.bootloader_jump
-                0x0000000000004fb2       0x22 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/bootloaders/caterina.o
-                0x0000000000004fb2                bootloader_jump
+                0x0000000000004ff4       0x22 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/bootloaders/caterina.o
+                0x0000000000004ff4                bootloader_jump
  .text.mcu_reset
-                0x0000000000004fd4       0x16 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/bootloaders/caterina.o
-                0x0000000000004fd4                mcu_reset
+                0x0000000000005016       0x16 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/bootloaders/caterina.o
+                0x0000000000005016                mcu_reset
  .text.sync_recv
-                0x0000000000004fea       0x10 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x000000000000502c       0x10 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
  .text.sync_send
-                0x0000000000004ffa        0xc .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x000000000000503c        0xc .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
  .text.serial_read_chunk.constprop.0
-                0x0000000000005006       0x4c .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x0000000000005048       0x4c .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
  .text.serial_recive_packet
-                0x0000000000005052       0x40 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x0000000000005094       0x40 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
  .text.soft_serial_initiator_init
-                0x0000000000005092        0x6 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
-                0x0000000000005092                soft_serial_initiator_init
+                0x00000000000050d4        0x6 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x00000000000050d4                soft_serial_initiator_init
  .text.soft_serial_target_init
-                0x0000000000005098       0x12 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
-                0x0000000000005098                soft_serial_target_init
+                0x00000000000050da       0x12 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x00000000000050da                soft_serial_target_init
  .text.serial_write_chunk
-                0x00000000000050aa       0x40 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
-                0x00000000000050aa                serial_write_chunk
+                0x00000000000050ec       0x40 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x00000000000050ec                serial_write_chunk
  .text.serial_send_packet
-                0x00000000000050ea       0x32 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x000000000000512c       0x32 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
  .text.__vector_1
-                0x000000000000511c      0x14c .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
-                0x000000000000511c                __vector_1
+                0x000000000000515e      0x14c .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x000000000000515e                __vector_1
  .text.soft_serial_transaction
-                0x0000000000005268       0xf6 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
-                0x0000000000005268                soft_serial_transaction
+                0x00000000000052aa       0xf6 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+                0x00000000000052aa                soft_serial_transaction
  .text.keyboard_leds
-                0x000000000000535e        0x6 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000053a0        0x6 .build/obj_redox_rev1_base_ad_rev3/lufa.o
  .text.send_report
-                0x0000000000005364       0x48 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005364                send_report
+                0x00000000000053a6       0x48 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000053a6                send_report
  .text.send_extra
-                0x00000000000053ac        0xe .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000053ee        0xe .build/obj_redox_rev1_base_ad_rev3/lufa.o
  .text.send_mouse
-                0x00000000000053ba        0xe .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000053fc        0xe .build/obj_redox_rev1_base_ad_rev3/lufa.o
  .text.send_keyboard
-                0x00000000000053c8       0x28 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x000000000000540a       0x28 .build/obj_redox_rev1_base_ad_rev3/lufa.o
  .text.EVENT_USB_Device_Connect
-                0x00000000000053f0       0x1c .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x00000000000053f0                EVENT_USB_Device_Connect
+                0x0000000000005432       0x1c .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x0000000000005432                EVENT_USB_Device_Connect
  .text.EVENT_USB_Device_Disconnect
-                0x000000000000540c        0x6 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x000000000000540c                EVENT_USB_Device_Disconnect
+                0x000000000000544e        0x6 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x000000000000544e                EVENT_USB_Device_Disconnect
  .text.EVENT_USB_Device_Reset
-                0x0000000000005412        0x6 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005412                EVENT_USB_Device_Reset
+                0x0000000000005454        0x6 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x0000000000005454                EVENT_USB_Device_Reset
  .text.EVENT_USB_Device_Suspend
-                0x0000000000005418       0x12 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005418                EVENT_USB_Device_Suspend
+                0x000000000000545a       0x12 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x000000000000545a                EVENT_USB_Device_Suspend
  .text.EVENT_USB_Device_WakeUp
-                0x000000000000542a       0x16 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x000000000000542a                EVENT_USB_Device_WakeUp
+                0x000000000000546c       0x16 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x000000000000546c                EVENT_USB_Device_WakeUp
  .text.EVENT_USB_Device_ConfigurationChanged
-                0x0000000000005440       0x2a .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005440                EVENT_USB_Device_ConfigurationChanged
+                0x0000000000005482       0x2a .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x0000000000005482                EVENT_USB_Device_ConfigurationChanged
  .text.EVENT_USB_Device_ControlRequest
-                0x000000000000546a      0x17e .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x000000000000546a                EVENT_USB_Device_ControlRequest
+                0x00000000000054ac      0x17e .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000054ac                EVENT_USB_Device_ControlRequest
  .text.protocol_setup
-                0x00000000000055e8       0x34 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x00000000000055e8                protocol_setup
+                0x000000000000562a       0x34 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x000000000000562a                protocol_setup
  .text.protocol_pre_init
-                0x000000000000561c       0x1a .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x000000000000561c                protocol_pre_init
+                0x000000000000565e       0x1a .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x000000000000565e                protocol_pre_init
  .text.protocol_post_init
-                0x0000000000005636        0xa .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005636                protocol_post_init
+                0x0000000000005678        0xa .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x0000000000005678                protocol_post_init
  .text.protocol_pre_task
-                0x0000000000005640       0x34 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005640                protocol_pre_task
+                0x0000000000005682       0x34 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x0000000000005682                protocol_pre_task
  .text.protocol_post_task
-                0x0000000000005674        0x2 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005674                protocol_post_task
+                0x00000000000056b6        0x2 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000056b6                protocol_post_task
  .text.CALLBACK_USB_GetDescriptor
-                0x0000000000005676       0x10 .build/obj_redox_rev1_base_ad_rev3/lufa.o
-                0x0000000000005676                CALLBACK_USB_GetDescriptor
+                0x00000000000056b8       0x10 .build/obj_redox_rev1_base_ad_rev3/lufa.o
+                0x00000000000056b8                CALLBACK_USB_GetDescriptor
  .text.get_usb_descriptor
-                0x0000000000005686       0xb2 .build/obj_redox_rev1_base_ad_rev3/usb_descriptor.o
-                0x0000000000005686                get_usb_descriptor
+                0x00000000000056c8       0xb2 .build/obj_redox_rev1_base_ad_rev3/usb_descriptor.o
+                0x00000000000056c8                get_usb_descriptor
  .text.USB_Device_SendRemoteWakeup
-                0x0000000000005738       0x2c .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
-                0x0000000000005738                USB_Device_SendRemoteWakeup
+                0x000000000000577a       0x2c .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                0x000000000000577a                USB_Device_SendRemoteWakeup
  .text.Endpoint_Write_Stream_LE
-                0x0000000000005764       0x8a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x0000000000005764                Endpoint_Write_Stream_LE
+                0x00000000000057a6       0x8a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00000000000057a6                Endpoint_Write_Stream_LE
  .text.Endpoint_Write_Control_Stream_LE
-                0x00000000000057ee       0xbc .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x00000000000057ee                Endpoint_Write_Control_Stream_LE
+                0x0000000000005830       0xbc .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x0000000000005830                Endpoint_Write_Control_Stream_LE
  .text.Endpoint_Write_Control_PStream_LE
-                0x00000000000058aa       0xc2 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x00000000000058aa                Endpoint_Write_Control_PStream_LE
+                0x00000000000058ec       0xc2 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00000000000058ec                Endpoint_Write_Control_PStream_LE
  .text.Endpoint_ConfigureEndpoint_Prv
-                0x000000000000596c       0x6a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x000000000000596c                Endpoint_ConfigureEndpoint_Prv
+                0x00000000000059ae       0x6a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000000000059ae                Endpoint_ConfigureEndpoint_Prv
  .text.Endpoint_ClearStatusStage
-                0x00000000000059d6       0x3e .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x00000000000059d6                Endpoint_ClearStatusStage
+                0x0000000000005a18       0x3e .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x0000000000005a18                Endpoint_ClearStatusStage
  .text.Endpoint_WaitUntilReady
-                0x0000000000005a14       0x66 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x0000000000005a14                Endpoint_WaitUntilReady
+                0x0000000000005a56       0x66 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x0000000000005a56                Endpoint_WaitUntilReady
  .text.USB_Disable
-                0x0000000000005a7a       0x34 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x0000000000005a7a                USB_Disable
+                0x0000000000005abc       0x34 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x0000000000005abc                USB_Disable
  .text.USB_ResetInterface
-                0x0000000000005aae       0x86 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x0000000000005aae                USB_ResetInterface
+                0x0000000000005af0       0x86 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x0000000000005af0                USB_ResetInterface
  .text.USB_Init
-                0x0000000000005b34       0x24 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x0000000000005b34                USB_Init
+                0x0000000000005b76       0x24 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x0000000000005b76                USB_Init
  .text.USB_INT_DisableAllInterrupts
-                0x0000000000005b58       0x10 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x0000000000005b58                USB_INT_DisableAllInterrupts
+                0x0000000000005b9a       0x10 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000000000005b9a                USB_INT_DisableAllInterrupts
  .text.USB_INT_ClearAllInterrupts
-                0x0000000000005b68        0xa .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x0000000000005b68                USB_INT_ClearAllInterrupts
+                0x0000000000005baa        0xa .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000000000005baa                USB_INT_ClearAllInterrupts
  .text.__vector_10
-                0x0000000000005b72      0x1a4 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x0000000000005b72                __vector_10
+                0x0000000000005bb4      0x1a4 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000000000005bb4                __vector_10
  .text.__vector_11
-                0x0000000000005d16       0x88 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x0000000000005d16                __vector_11
+                0x0000000000005d58       0x88 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000000000005d58                __vector_11
  .text.USB_Device_ProcessControlRequest
-                0x0000000000005d9e      0x2aa .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
-                0x0000000000005d9e                USB_Device_ProcessControlRequest
+                0x0000000000005de0      0x2aa .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x0000000000005de0                USB_Device_ProcessControlRequest
  .text.USB_Event_Stub
-                0x0000000000006048        0x2 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/Events.o
-                0x0000000000006048                USB_Event_Stub
-                0x0000000000006048                EVENT_USB_Device_StartOfFrame
+                0x000000000000608a        0x2 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/Events.o
+                0x000000000000608a                USB_Event_Stub
+                0x000000000000608a                EVENT_USB_Device_StartOfFrame
  .text.USB_USBTask
-                0x000000000000604a       0x36 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
-                0x000000000000604a                USB_USBTask
+                0x000000000000608c       0x36 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+                0x000000000000608c                USB_USBTask
  .text.usb_disconnect
-                0x0000000000006080        0xa .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
-                0x0000000000006080                usb_disconnect
+                0x00000000000060c2        0xa .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
+                0x00000000000060c2                usb_disconnect
  .text.usb_vbus_state
-                0x000000000000608a       0x1a .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
-                0x000000000000608a                usb_vbus_state
+                0x00000000000060cc       0x1a .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
+                0x00000000000060cc                usb_vbus_state
  .text.libgcc.div
-                0x00000000000060a4       0x28 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
-                0x00000000000060a4                __udivmodhi4
+                0x00000000000060e6       0x28 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x00000000000060e6                __udivmodhi4
  .text.libgcc.div
-                0x00000000000060cc       0x28 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
-                0x00000000000060cc                __divmodhi4
-                0x00000000000060cc                _div
- .text.libgcc   0x00000000000060f4        0xc /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                0x00000000000060f4                __tablejump2__
+                0x000000000000610e       0x28 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
+                0x000000000000610e                __divmodhi4
+                0x000000000000610e                _div
+ .text.libgcc   0x0000000000006136        0xc /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000000000006136                __tablejump2__
  .text.libgcc.prologue
-                0x0000000000006100       0x38 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_prologue.o)
-                0x0000000000006100                __prologue_saves__
+                0x0000000000006142       0x38 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_prologue.o)
+                0x0000000000006142                __prologue_saves__
  .text.libgcc.prologue
-                0x0000000000006138       0x36 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_epilogue.o)
-                0x0000000000006138                __epilogue_restores__
+                0x000000000000617a       0x36 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_epilogue.o)
+                0x000000000000617a                __epilogue_restores__
  .text.libgcc.builtins
-                0x000000000000616e       0x32 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_ashldi3.o)
-                0x000000000000616e                __ashldi3
+                0x00000000000061b0       0x32 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_ashldi3.o)
+                0x00000000000061b0                __ashldi3
  .text.libgcc.builtins
-                0x00000000000061a0       0x3c /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_ashrdi3.o)
-                0x00000000000061a0                __ashrdi3
-                0x00000000000061a4                __lshrdi3
+                0x00000000000061e2       0x3c /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_ashrdi3.o)
+                0x00000000000061e2                __ashrdi3
+                0x00000000000061e6                __lshrdi3
  .text.avr-libc
-                0x00000000000061dc       0x1a /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
-                0x00000000000061dc                memcmp
+                0x000000000000621e       0x1a /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcmp.o)
+                0x000000000000621e                memcmp
  .text.avr-libc
-                0x00000000000061f6       0x12 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcpy.o)
-                0x00000000000061f6                memcpy
+                0x0000000000006238       0x12 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000000000006238                memcpy
  .text.avr-libc
-                0x0000000000006208       0x10 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
-                0x0000000000006208                eeprom_read_byte
+                0x000000000000624a       0x10 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
+                0x000000000000624a                eeprom_read_byte
  .text.avr-libc
-                0x0000000000006218        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_dword.o)
-                0x0000000000006218                eeprom_read_dword
-                0x0000000000006218                eeprom_read_float
+                0x000000000000625a        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_dword.o)
+                0x000000000000625a                eeprom_read_dword
+                0x000000000000625a                eeprom_read_float
  .text.avr-libc
-                0x0000000000006224        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_word.o)
-                0x0000000000006224                eeprom_read_word
+                0x0000000000006266        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_word.o)
+                0x0000000000006266                eeprom_read_word
  .text.avr-libc
-                0x0000000000006230       0x20 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_block.o)
-                0x0000000000006230                eeprom_update_block
+                0x0000000000006272       0x20 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_block.o)
+                0x0000000000006272                eeprom_update_block
  .text.avr-libc
-                0x0000000000006250       0x24 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
-                0x0000000000006250                eeprom_update_byte
-                0x0000000000006252                eeprom_update_r18
+                0x0000000000006292       0x24 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
+                0x0000000000006292                eeprom_update_byte
+                0x0000000000006294                eeprom_update_r18
  .text.avr-libc
-                0x0000000000006274       0x18 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_dword.o)
-                0x0000000000006274                eeprom_update_dword
-                0x0000000000006274                eeprom_update_float
+                0x00000000000062b6       0x18 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_dword.o)
+                0x00000000000062b6                eeprom_update_dword
+                0x00000000000062b6                eeprom_update_float
  .text.avr-libc
-                0x000000000000628c        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_word.o)
-                0x000000000000628c                eeprom_update_word
+                0x00000000000062ce        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_word.o)
+                0x00000000000062ce                eeprom_update_word
  .text.avr-libc
-                0x0000000000006298       0x20 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
-                0x0000000000006298                eeprom_read_block
-                0x000000000000629c                eeprom_read_blraw
-                0x00000000000062b8                . = ALIGN (0x2)
+                0x00000000000062da       0x20 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_block.o)
+                0x00000000000062da                eeprom_read_block
+                0x00000000000062de                eeprom_read_blraw
+                0x00000000000062fa                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000062b8        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x00000000000062b8                exit
-                0x00000000000062b8                _exit
+ .fini9         0x00000000000062fa        0x0 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x00000000000062fa                exit
+                0x00000000000062fa                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -2532,11 +2532,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000062b8        0x4 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00000000000062fa        0x4 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000062bc                _etext = .
+                0x00000000000062fe                _etext = .
 
-.data           0x0000000000800100       0xbe load address 0x00000000000062bc
+.data           0x0000000000800100       0xbe load address 0x00000000000062fe
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -2775,8 +2775,8 @@ END GROUP
                 0x0000000000800316                USB_DeviceState
                 0x0000000000800317                USB_ControlRequest
                 0x000000000080031f                PROVIDE (__bss_end, .)
-                0x00000000000062bc                __data_load_start = LOADADDR (.data)
-                0x000000000000637a                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000000000062fe                __data_load_start = LOADADDR (.data)
+                0x00000000000063bc                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x000000000080031f        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -3155,68 +3155,68 @@ END GROUP
  .debug_abbrev  0x0000000000006ff2      0x16b .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
  .debug_abbrev  0x000000000000715d      0x155 .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
 
-.debug_line     0x0000000000000000     0xb8e4
+.debug_line     0x0000000000000000     0xb915
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000       0x1a /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
- .debug_line    0x000000000000001a      0x3a4 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
- .debug_line    0x00000000000003be      0x76d .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
- .debug_line    0x0000000000000b2b      0x1de .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
- .debug_line    0x0000000000000d09      0xabb .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
- .debug_line    0x00000000000017c4      0x440 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
- .debug_line    0x0000000000001c04      0x4f7 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
- .debug_line    0x00000000000020fb      0x5e0 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
- .debug_line    0x00000000000026db      0x35b .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
- .debug_line    0x0000000000002a36      0x514 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
- .debug_line    0x0000000000002f4a      0x23a .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
- .debug_line    0x0000000000003184      0x1d0 .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
- .debug_line    0x0000000000003354      0x166 .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
- .debug_line    0x00000000000034ba       0x61 .build/obj_redox_rev1_base_ad_rev3/quantum/logging/debug.o
- .debug_line    0x000000000000351b       0x6f .build/obj_redox_rev1_base_ad_rev3/quantum/logging/sendchar.o
- .debug_line    0x000000000000358a       0xff .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
- .debug_line    0x0000000000003689      0x356 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
- .debug_line    0x00000000000039df      0x308 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
- .debug_line    0x0000000000003ce7      0x12c .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
- .debug_line    0x0000000000003e13      0x1dc .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
- .debug_line    0x0000000000003fef      0x1b0 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
- .debug_line    0x000000000000419f      0x36a .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
- .debug_line    0x0000000000004509       0xba .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
- .debug_line    0x00000000000045c3       0x96 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/printf.o
- .debug_line    0x0000000000004659      0x64b .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
- .debug_line    0x0000000000004ca4      0x185 .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
- .debug_line    0x0000000000004e29      0xc88 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
- .debug_line    0x0000000000005ab1      0x198 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
- .debug_line    0x0000000000005c49       0xee .build/obj_redox_rev1_base_ad_rev3/ws2812_bitbang.o
- .debug_line    0x0000000000005d37       0x53 .build/obj_redox_rev1_base_ad_rev3/quantum/led_tables.o
- .debug_line    0x0000000000005d8a       0xde .build/obj_redox_rev1_base_ad_rev3/crc.o
- .debug_line    0x0000000000005e68       0xdd .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode.o
- .debug_line    0x0000000000005f45      0x179 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode_common.o
- .debug_line    0x00000000000060be      0x56b .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
- .debug_line    0x0000000000006629      0x1fa .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_magic.o
- .debug_line    0x0000000000006823      0x3ab .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
- .debug_line    0x0000000000006bce      0x363 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
- .debug_line    0x0000000000006f31      0x146 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_grave_esc.o
- .debug_line    0x0000000000007077      0x1ce .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
- .debug_line    0x0000000000007245      0x3dc .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
- .debug_line    0x0000000000007621      0x230 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
- .debug_line    0x0000000000007851      0x250 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
- .debug_line    0x0000000000007aa1      0x103 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
- .debug_line    0x0000000000007ba4       0xe6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
- .debug_line    0x0000000000007c8a       0x73 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/platform.o
- .debug_line    0x0000000000007cfd      0x19d .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
- .debug_line    0x0000000000007e9a      0x1f2 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
- .debug_line    0x000000000000808c       0xbd .build/obj_redox_rev1_base_ad_rev3/platforms/avr/bootloaders/caterina.o
- .debug_line    0x0000000000008149      0x528 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
- .debug_line    0x0000000000008671      0x6fb .build/obj_redox_rev1_base_ad_rev3/lufa.o
- .debug_line    0x0000000000008d6c      0x21f .build/obj_redox_rev1_base_ad_rev3/usb_descriptor.o
- .debug_line    0x0000000000008f8b      0x10a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
- .debug_line    0x0000000000009095     0x13cb .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
- .debug_line    0x000000000000a460      0x475 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
- .debug_line    0x000000000000a8d5      0x2da .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
- .debug_line    0x000000000000abaf      0x50a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
- .debug_line    0x000000000000b0b9      0x469 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
- .debug_line    0x000000000000b522       0x96 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/Events.o
- .debug_line    0x000000000000b5b8      0x15d .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
- .debug_line    0x000000000000b715      0x1cf .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
+ .debug_line    0x000000000000001a      0x3d5 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
+ .debug_line    0x00000000000003ef      0x76d .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+ .debug_line    0x0000000000000b5c      0x1de .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+ .debug_line    0x0000000000000d3a      0xabb .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+ .debug_line    0x00000000000017f5      0x440 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+ .debug_line    0x0000000000001c35      0x4f7 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+ .debug_line    0x000000000000212c      0x5e0 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+ .debug_line    0x000000000000270c      0x35b .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+ .debug_line    0x0000000000002a67      0x514 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+ .debug_line    0x0000000000002f7b      0x23a .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
+ .debug_line    0x00000000000031b5      0x1d0 .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
+ .debug_line    0x0000000000003385      0x166 .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
+ .debug_line    0x00000000000034eb       0x61 .build/obj_redox_rev1_base_ad_rev3/quantum/logging/debug.o
+ .debug_line    0x000000000000354c       0x6f .build/obj_redox_rev1_base_ad_rev3/quantum/logging/sendchar.o
+ .debug_line    0x00000000000035bb       0xff .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
+ .debug_line    0x00000000000036ba      0x356 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+ .debug_line    0x0000000000003a10      0x308 .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+ .debug_line    0x0000000000003d18      0x12c .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
+ .debug_line    0x0000000000003e44      0x1dc .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+ .debug_line    0x0000000000004020      0x1b0 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+ .debug_line    0x00000000000041d0      0x36a .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+ .debug_line    0x000000000000453a       0xba .build/obj_redox_rev1_base_ad_rev3/quantum/main.o
+ .debug_line    0x00000000000045f4       0x96 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/printf.o
+ .debug_line    0x000000000000468a      0x64b .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+ .debug_line    0x0000000000004cd5      0x185 .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
+ .debug_line    0x0000000000004e5a      0xc88 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+ .debug_line    0x0000000000005ae2      0x198 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
+ .debug_line    0x0000000000005c7a       0xee .build/obj_redox_rev1_base_ad_rev3/ws2812_bitbang.o
+ .debug_line    0x0000000000005d68       0x53 .build/obj_redox_rev1_base_ad_rev3/quantum/led_tables.o
+ .debug_line    0x0000000000005dbb       0xde .build/obj_redox_rev1_base_ad_rev3/crc.o
+ .debug_line    0x0000000000005e99       0xdd .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode.o
+ .debug_line    0x0000000000005f76      0x179 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode_common.o
+ .debug_line    0x00000000000060ef      0x56b .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+ .debug_line    0x000000000000665a      0x1fa .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_magic.o
+ .debug_line    0x0000000000006854      0x3ab .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
+ .debug_line    0x0000000000006bff      0x363 .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+ .debug_line    0x0000000000006f62      0x146 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_grave_esc.o
+ .debug_line    0x00000000000070a8      0x1ce .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
+ .debug_line    0x0000000000007276      0x3dc .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+ .debug_line    0x0000000000007652      0x230 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+ .debug_line    0x0000000000007882      0x250 .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+ .debug_line    0x0000000000007ad2      0x103 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+ .debug_line    0x0000000000007bd5       0xe6 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+ .debug_line    0x0000000000007cbb       0x73 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/platform.o
+ .debug_line    0x0000000000007d2e      0x19d .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
+ .debug_line    0x0000000000007ecb      0x1f2 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+ .debug_line    0x00000000000080bd       0xbd .build/obj_redox_rev1_base_ad_rev3/platforms/avr/bootloaders/caterina.o
+ .debug_line    0x000000000000817a      0x528 .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+ .debug_line    0x00000000000086a2      0x6fb .build/obj_redox_rev1_base_ad_rev3/lufa.o
+ .debug_line    0x0000000000008d9d      0x21f .build/obj_redox_rev1_base_ad_rev3/usb_descriptor.o
+ .debug_line    0x0000000000008fbc      0x10a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_line    0x00000000000090c6     0x13cb .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_line    0x000000000000a491      0x475 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_line    0x000000000000a906      0x2da .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_line    0x000000000000abe0      0x50a .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_line    0x000000000000b0ea      0x469 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_line    0x000000000000b553       0x96 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/Events.o
+ .debug_line    0x000000000000b5e9      0x15d .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_line    0x000000000000b746      0x1cf .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
 
 .debug_frame    0x0000000000000000     0x2fa0
  *(.debug_frame)
@@ -3400,59 +3400,59 @@ END GROUP
  .debug_str     0x000000000000a671       0x36 .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
                                         0x35e (size before relaxing)
 
-.debug_loc      0x0000000000000000     0xc21f
+.debug_loc      0x0000000000000000     0xc25b
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x499 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
- .debug_loc     0x0000000000000499      0xae0 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
- .debug_loc     0x0000000000000f79      0x12d .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
- .debug_loc     0x00000000000010a6      0xa9d .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
- .debug_loc     0x0000000000001b43      0x882 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
- .debug_loc     0x00000000000023c5      0x4b7 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
- .debug_loc     0x000000000000287c      0x343 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
- .debug_loc     0x0000000000002bbf      0x1c4 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
- .debug_loc     0x0000000000002d83      0x250 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
- .debug_loc     0x0000000000002fd3      0x3ce .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
- .debug_loc     0x00000000000033a1      0x16d .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
- .debug_loc     0x000000000000350e      0x1aa .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
- .debug_loc     0x00000000000036b8       0x21 .build/obj_redox_rev1_base_ad_rev3/quantum/logging/sendchar.o
- .debug_loc     0x00000000000036d9       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
- .debug_loc     0x00000000000036f1      0x22f .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
- .debug_loc     0x0000000000003920      0x40e .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
- .debug_loc     0x0000000000003d2e      0x14e .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
- .debug_loc     0x0000000000003e7c      0x120 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
- .debug_loc     0x0000000000003f9c      0x1f2 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
- .debug_loc     0x000000000000418e      0x53f .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
- .debug_loc     0x00000000000046cd      0x32d .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
- .debug_loc     0x00000000000049fa      0x1db .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
- .debug_loc     0x0000000000004bd5     0x1008 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
- .debug_loc     0x0000000000005bdd      0x12e .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
- .debug_loc     0x0000000000005d0b      0x1a1 .build/obj_redox_rev1_base_ad_rev3/ws2812_bitbang.o
- .debug_loc     0x0000000000005eac      0x146 .build/obj_redox_rev1_base_ad_rev3/crc.o
- .debug_loc     0x0000000000005ff2       0x5c .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode.o
- .debug_loc     0x000000000000604e      0x145 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode_common.o
- .debug_loc     0x0000000000006193      0x5a6 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
- .debug_loc     0x0000000000006739       0xc9 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_magic.o
- .debug_loc     0x0000000000006802      0xbdd .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
- .debug_loc     0x00000000000073df      0x3da .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
- .debug_loc     0x00000000000077b9      0x14b .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_grave_esc.o
- .debug_loc     0x0000000000007904      0x368 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
- .debug_loc     0x0000000000007c6c      0x753 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
- .debug_loc     0x00000000000083bf       0xf8 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
- .debug_loc     0x00000000000084b7      0x33f .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
- .debug_loc     0x00000000000087f6       0xf9 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
- .debug_loc     0x00000000000088ef       0x41 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
- .debug_loc     0x0000000000008930       0x77 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
- .debug_loc     0x00000000000089a7      0x21d .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
- .debug_loc     0x0000000000008bc4      0x92e .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
- .debug_loc     0x00000000000094f2      0x3ff .build/obj_redox_rev1_base_ad_rev3/lufa.o
- .debug_loc     0x00000000000098f1      0x30d .build/obj_redox_rev1_base_ad_rev3/usb_descriptor.o
- .debug_loc     0x0000000000009bfe     0x1a5d .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
- .debug_loc     0x000000000000b65b      0x38d .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
- .debug_loc     0x000000000000b9e8       0xd5 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
- .debug_loc     0x000000000000babd      0x3f4 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
- .debug_loc     0x000000000000beb1      0x2e0 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
- .debug_loc     0x000000000000c191       0x49 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
- .debug_loc     0x000000000000c1da       0x45 .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
+ .debug_loc     0x0000000000000000      0x4d5 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_introspection.o
+ .debug_loc     0x00000000000004d5      0xae0 .build/obj_redox_rev1_base_ad_rev3/quantum/quantum.o
+ .debug_loc     0x0000000000000fb5      0x12d .build/obj_redox_rev1_base_ad_rev3/quantum/led.o
+ .debug_loc     0x00000000000010e2      0xa9d .build/obj_redox_rev1_base_ad_rev3/quantum/action.o
+ .debug_loc     0x0000000000001b7f      0x882 .build/obj_redox_rev1_base_ad_rev3/quantum/action_layer.o
+ .debug_loc     0x0000000000002401      0x4b7 .build/obj_redox_rev1_base_ad_rev3/quantum/action_tapping.o
+ .debug_loc     0x00000000000028b8      0x343 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o
+ .debug_loc     0x0000000000002bfb      0x1c4 .build/obj_redox_rev1_base_ad_rev3/quantum/eeconfig.o
+ .debug_loc     0x0000000000002dbf      0x250 .build/obj_redox_rev1_base_ad_rev3/quantum/keyboard.o
+ .debug_loc     0x000000000000300f      0x3ce .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o
+ .debug_loc     0x00000000000033dd      0x16d .build/obj_redox_rev1_base_ad_rev3/quantum/keycode_config.o
+ .debug_loc     0x000000000000354a      0x1aa .build/obj_redox_rev1_base_ad_rev3/quantum/sync_timer.o
+ .debug_loc     0x00000000000036f4       0x21 .build/obj_redox_rev1_base_ad_rev3/quantum/logging/sendchar.o
+ .debug_loc     0x0000000000003715       0x18 .build/obj_redox_rev1_base_ad_rev3/quantum/bootmagic/magic.o
+ .debug_loc     0x000000000000372d      0x22f .build/obj_redox_rev1_base_ad_rev3/quantum/matrix_common.o
+ .debug_loc     0x000000000000395c      0x40e .build/obj_redox_rev1_base_ad_rev3/quantum/matrix.o
+ .debug_loc     0x0000000000003d6a      0x14e .build/obj_redox_rev1_base_ad_rev3/quantum/debounce/sym_defer_g.o
+ .debug_loc     0x0000000000003eb8      0x120 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/split_util.o
+ .debug_loc     0x0000000000003fd8      0x1f2 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o
+ .debug_loc     0x00000000000041ca      0x53f .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o
+ .debug_loc     0x0000000000004709      0x32d .build/obj_redox_rev1_base_ad_rev3/quantum/mousekey.o
+ .debug_loc     0x0000000000004a36      0x1db .build/obj_redox_rev1_base_ad_rev3/quantum/color.o
+ .debug_loc     0x0000000000004c11     0x1008 .build/obj_redox_rev1_base_ad_rev3/quantum/rgblight/rgblight.o
+ .debug_loc     0x0000000000005c19      0x12e .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_rgb.o
+ .debug_loc     0x0000000000005d47      0x1a1 .build/obj_redox_rev1_base_ad_rev3/ws2812_bitbang.o
+ .debug_loc     0x0000000000005ee8      0x146 .build/obj_redox_rev1_base_ad_rev3/crc.o
+ .debug_loc     0x000000000000602e       0x5c .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode.o
+ .debug_loc     0x000000000000608a      0x145 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_unicode_common.o
+ .debug_loc     0x00000000000061cf      0x5a6 .build/obj_redox_rev1_base_ad_rev3/quantum/unicode/unicode.o
+ .debug_loc     0x0000000000006775       0xc9 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_magic.o
+ .debug_loc     0x000000000000683e      0xbdd .build/obj_redox_rev1_base_ad_rev3/quantum/send_string/send_string.o
+ .debug_loc     0x000000000000741b      0x3da .build/obj_redox_rev1_base_ad_rev3/quantum/command.o
+ .debug_loc     0x00000000000077f5      0x14b .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_grave_esc.o
+ .debug_loc     0x0000000000007940      0x368 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_space_cadet.o
+ .debug_loc     0x0000000000007ca8      0x753 .build/obj_redox_rev1_base_ad_rev3/quantum/process_keycode/process_tap_dance.o
+ .debug_loc     0x00000000000083fb       0xf8 .build/obj_redox_rev1_base_ad_rev3/protocol/host.o
+ .debug_loc     0x00000000000084f3      0x33f .build/obj_redox_rev1_base_ad_rev3/protocol/report.o
+ .debug_loc     0x0000000000008832       0xf9 .build/obj_redox_rev1_base_ad_rev3/protocol/usb_device_state.o
+ .debug_loc     0x000000000000892b       0x41 .build/obj_redox_rev1_base_ad_rev3/platforms/suspend.o
+ .debug_loc     0x000000000000896c       0x77 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o
+ .debug_loc     0x00000000000089e3      0x21d .build/obj_redox_rev1_base_ad_rev3/platforms/avr/timer.o
+ .debug_loc     0x0000000000008c00      0x92e .build/obj_redox_rev1_base_ad_rev3/serial.a(serial.o)
+ .debug_loc     0x000000000000952e      0x3ff .build/obj_redox_rev1_base_ad_rev3/lufa.o
+ .debug_loc     0x000000000000992d      0x30d .build/obj_redox_rev1_base_ad_rev3/usb_descriptor.o
+ .debug_loc     0x0000000000009c3a     0x1a5d .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_loc     0x000000000000b697      0x38d .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_loc     0x000000000000ba24       0xd5 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_loc     0x000000000000baf9      0x3f4 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_loc     0x000000000000beed      0x2e0 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_loc     0x000000000000c1cd       0x49 .build/obj_redox_rev1_base_ad_rev3/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_loc     0x000000000000c216       0x45 .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o
 
 .debug_macinfo
  *(.debug_macinfo)
