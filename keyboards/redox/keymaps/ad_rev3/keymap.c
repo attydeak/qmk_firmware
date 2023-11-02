@@ -52,24 +52,24 @@ enum custom_keycodes {
 #define UC_00A0 UC(0x00a0)
 
 // // Key when tapped, alt when held
-// #define CTRLA LT(0,KC_A)
-// #define CTRLS LT(0,KC_S)
-// #define CTRLZ LT(0,KC_Z)
-// #define CTRLX LT(0,KC_X)
-// #define CTRLC LT(0,KC_C)
-// #define CTRLV LT(0,KC_V)
-// #define CTRLB LT(0,KC_B)
+#define CTRLA LT(0,KC_A)
+#define CTRLS LT(0,KC_S)
+#define CTRLZ LT(0,KC_Z)
+#define CTRLX LT(0,KC_X)
+#define CTRLC LT(0,KC_C)
+#define CTRLV LT(0,KC_V)
+#define CTRLB LT(0,KC_B)
 
-// Tap dance keycodes
-enum {
-  ALL,
-  SAVE,
-  UNDO,
-  CUT,
-  COPY,
-  PASTE,
-  BOLD
-};
+// // Tap dance keycodes
+// enum {
+//   ALL,
+//   SAVE,
+//   UNDO,
+//   CUT,
+//   COPY,
+//   PASTE,
+//   BOLD
+// };
 
 // Tap Dance definitions
 tap_dance_action_t tap_dance_actions[] = {

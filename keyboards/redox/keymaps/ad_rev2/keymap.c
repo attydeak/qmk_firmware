@@ -51,15 +51,6 @@ enum custom_keycodes {
 // Non-breaking space.
 #define UC_00A0 UC(0x00a0)
 
-// // Key when tapped, alt when held
-// #define CTRLA LT(0,KC_A)
-// #define CTRLS LT(0,KC_S)
-// #define CTRLZ LT(0,KC_Z)
-// #define CTRLX LT(0,KC_X)
-// #define CTRLC LT(0,KC_C)
-// #define CTRLV LT(0,KC_V)
-// #define CTRLB LT(0,KC_B)
-
 // Tap dance keycodes
 enum {
   ALL,
@@ -163,62 +154,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
             break;
         }
-
-        case ALL:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_A)); // Intercept hold function to send Ctrl-A
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
-
-        case SAVE:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_S)); // Intercept hold function to send Ctrl-S
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
-
-        case UNDO:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_Z)); // Intercept hold function to send Ctrl-Z
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
-
-        case CUT:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_X)); // Intercept hold function to send Ctrl-X
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
-
-        case COPY:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_C)); // Intercept hold function to send Ctrl-C
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
-
-        case PASTE:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_V)); // Intercept hold function to send Ctrl-V
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
-
-        case BOLD:
-            if (!record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_B)); // Intercept hold function to send Ctrl-B
-                return false;
-            }
-            return true;             // Return true for normal processing of tap keycode
-            // break;
     }
     return true;
 };
