@@ -59,6 +59,8 @@ enum custom_keycodes {
 #define CTRLC LT(0,KC_C)
 #define CTRLV LT(0,KC_V)
 #define CTRLB LT(0,KC_B)
+#define CTRLW LT(0,KC_W)
+#define CTRLY LT(0,KC_Y)
 
 tap_dance_action_t tap_dance_actions[] = {};
 
@@ -191,6 +193,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             return true;             // Return true for normal processing of tap keycode
+        case LT(0,KC_W):
+            if (!record->tap.count && record->event.pressed) {
+                tap_code16(C(KC_W)); // Intercept hold function to send Ctrl-W
+                return false;
+            }
+            return true;             // Return true for normal processing of tap keycode
+        case LT(0,KC_Y):
+            if (!record->tap.count && record->event.pressed) {
+                tap_code16(C(KC_Y)); // Intercept hold function to send Ctrl-Y
+                return false;
+            }
+            return true;             // Return true for normal processing of tap keycode
     }
     return true;
 };
@@ -201,11 +215,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
      KC_GRV  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_MINS ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_EQL  ,
+     KC_TAB  ,KC_Q    ,CTRLW   ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,CTRLY   ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_EQL  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      NAV_L   ,CTRLA   ,CTRLS   ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,CTRLZ   ,CTRLZ   ,CTRLC   ,CTRLV   ,CTRLB   ,TT(_NAV),KC_LSFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
+     KC_LSFT ,CTRLZ   ,CTRLX   ,CTRLC   ,CTRLV   ,CTRLB   ,TT(_NAV),KC_LSFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
      MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_SPC  ,KC_LCTL ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_APP  ,KC_BSLS ,MO_INTR
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
