@@ -71,17 +71,19 @@ enum custom_keycodes {
 //   BOLD
 // };
 
-// Tap Dance definitions
-tap_dance_action_t tap_dance_actions[] = {
-    // Tap once for KC, twice for Command
-    [ALL] = ACTION_TAP_DANCE_DOUBLE(KC_A, C(KC_A)),
-    [SAVE] = ACTION_TAP_DANCE_DOUBLE(KC_S, C(KC_S)),
-    [UNDO] = ACTION_TAP_DANCE_DOUBLE(KC_Z, C(KC_Z)),
-    [CUT] = ACTION_TAP_DANCE_DOUBLE(KC_X, C(KC_X)),
-    [COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, C(KC_C)),
-    [PASTE] = ACTION_TAP_DANCE_DOUBLE(KC_V, C(KC_V)),
-    [BOLD] = ACTION_TAP_DANCE_DOUBLE(KC_B, C(KC_B)),
-};
+// // Tap Dance definitions
+// tap_dance_action_t tap_dance_actions[] = {
+//     // Tap once for KC, twice for Command
+//     [ALL] = ACTION_TAP_DANCE_DOUBLE(KC_A, C(KC_A)),
+//     [SAVE] = ACTION_TAP_DANCE_DOUBLE(KC_S, C(KC_S)),
+//     [UNDO] = ACTION_TAP_DANCE_DOUBLE(KC_Z, C(KC_Z)),
+//     [CUT] = ACTION_TAP_DANCE_DOUBLE(KC_X, C(KC_X)),
+//     [COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, C(KC_C)),
+//     [PASTE] = ACTION_TAP_DANCE_DOUBLE(KC_V, C(KC_V)),
+//     [BOLD] = ACTION_TAP_DANCE_DOUBLE(KC_B, C(KC_B)),
+// };
+
+tap_dance_action_t tap_dance_actions[] = {};
 
 // Is shift being held? Let's store this in a bool.
 static bool shift_held = false;
@@ -164,7 +166,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             break;
         }
 
-        case ALL:
+        case LT(0,KC_A):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_A)); // Intercept hold function to send Ctrl-A
                 return false;
@@ -172,15 +174,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return true;             // Return true for normal processing of tap keycode
             // break;
 
-        case SAVE:
+        case LT(0,KC_S):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_S)); // Intercept hold function to send Ctrl-S
                 return false;
             }
-            return true;             // Return true for normal processing of tap keycode
+            return true;           // Initialize tap structure associated with example tap dance key
             // break;
 
-        case UNDO:
+        case LT(0,KC_Z):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_Z)); // Intercept hold function to send Ctrl-Z
                 return false;
@@ -188,7 +190,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return true;             // Return true for normal processing of tap keycode
             // break;
 
-        case CUT:
+        case LT(0,KC_X):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_X)); // Intercept hold function to send Ctrl-X
                 return false;
@@ -196,7 +198,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return true;             // Return true for normal processing of tap keycode
             // break;
 
-        case COPY:
+        case LT(0,KC_C):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_C)); // Intercept hold function to send Ctrl-C
                 return false;
@@ -204,7 +206,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return true;             // Return true for normal processing of tap keycode
             // break;
 
-        case PASTE:
+        case LT(0,KC_V):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_V)); // Intercept hold function to send Ctrl-V
                 return false;
@@ -212,7 +214,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return true;             // Return true for normal processing of tap keycode
             // break;
 
-        case BOLD:
+        case LT(0,KC_B):
             if (!record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_B)); // Intercept hold function to send Ctrl-B
                 return false;
@@ -231,9 +233,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_EQL  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     NAV_L   ,TD(ALL) ,TD(SAVE),KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
+     NAV_L   ,CTRLA   ,CTRLS   ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,TD(UNDO),TD(CUT) ,TD(COPY),TD(PASTE),TD(BOLD),TT(_NAV),KC_LSFT,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
+     KC_LSFT ,CTRLZ   ,CTRLZ   ,CTRLC   ,CTRLV   ,CTRLB   ,TT(_NAV),KC_LSFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
      MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_SPC  ,KC_LCTL ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_APP  ,KC_BSLS ,MO_INTR
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
