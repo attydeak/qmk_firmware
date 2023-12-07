@@ -8,7 +8,7 @@
  platforms/progmem.h quantum/keyboard.h platforms/timer.h \
  platforms/avr/_timer.h quantum/keycode.h quantum/keycodes.h \
  quantum/modifiers.h quantum/action_code.h quantum/keycode_config.h \
- quantum/eeconfig.h
+ quantum/eeconfig.h platforms/eeprom.h
 
 keyboards/redox/rev1/config.h:
 
@@ -43,3 +43,5 @@ quantum/action_code.h:
 quantum/keycode_config.h:
 
 quantum/eeconfig.h:
+
+platforms/eeprom.h:

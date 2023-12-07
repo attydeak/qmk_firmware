@@ -5,7 +5,8 @@
  quantum/rgblight/rgblight_post_config.h \
  quantum/split_common/post_config.h platforms/avr/drivers/i2c_master.h \
  platforms/timer.h platforms/avr/_timer.h platforms/wait.h \
- platforms/avr/_wait.h quantum/util.h quantum/bitwise.h
+ platforms/avr/_wait.h quantum/util.h quantum/bitwise.h \
+ platforms/avr/_util.h
 
 keyboards/redox/rev1/config.h:
 
@@ -30,3 +31,5 @@ platforms/avr/_wait.h:
 quantum/util.h:
 
 quantum/bitwise.h:
+
+platforms/avr/_util.h:

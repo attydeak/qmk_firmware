@@ -12,8 +12,8 @@
  platforms/avr/_timer.h quantum/action.h quantum/keycode.h \
  quantum/keycodes.h quantum/modifiers.h quantum/action_code.h \
  quantum/bitwise.h quantum/rgblight/rgblight.h \
- quantum/rgblight/rgblight_modes.h quantum/eeconfig.h drivers/ws2812.h \
- quantum/color.h
+ quantum/rgblight/rgblight_modes.h quantum/eeconfig.h platforms/eeprom.h \
+ drivers/ws2812.h quantum/color.h quantum/util.h platforms/avr/_util.h
 
 keyboards/redox/rev1/config.h:
 
@@ -71,6 +71,12 @@ quantum/rgblight/rgblight_modes.h:
 
 quantum/eeconfig.h:
 
+platforms/eeprom.h:
+
 drivers/ws2812.h:
 
 quantum/color.h:
+
+quantum/util.h:
+
+platforms/avr/_util.h:

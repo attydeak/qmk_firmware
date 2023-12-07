@@ -100,8 +100,9 @@
  lib/lufa/LUFA/Drivers/USB/Class/Device/../Common/RNDISClassCommon.h \
  lib/lufa/LUFA/Drivers/USB/Class/Device/../Common/CDCClassCommon.h \
  lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h \
- tmk_core/protocol/host.h tmk_core/protocol/report.h \
- tmk_core/protocol/host_driver.h quantum/led.h
+ tmk_core/protocol/host.h tmk_core/protocol/report.h quantum/util.h \
+ quantum/bitwise.h platforms/avr/_util.h tmk_core/protocol/host_driver.h \
+ quantum/led.h
 
 keyboards/redox/rev1/config.h:
 
@@ -326,6 +327,12 @@ lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h:
 tmk_core/protocol/host.h:
 
 tmk_core/protocol/report.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 tmk_core/protocol/host_driver.h:
 

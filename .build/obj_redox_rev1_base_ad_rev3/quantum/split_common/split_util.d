@@ -11,11 +11,11 @@
  quantum/action_layer.h quantum/action.h quantum/keycode.h \
  quantum/keycodes.h quantum/modifiers.h quantum/action_code.h \
  quantum/bitwise.h quantum/rgblight/rgblight.h \
- quantum/rgblight/rgblight_modes.h quantum/eeconfig.h drivers/ws2812.h \
- quantum/color.h platforms/wait.h platforms/avr/_wait.h \
- quantum/logging/debug.h quantum/logging/print.h quantum/util.h \
- quantum/logging/sendchar.h tmk_core/protocol/usb_util.h \
- platforms/bootloader.h
+ quantum/rgblight/rgblight_modes.h quantum/eeconfig.h platforms/eeprom.h \
+ drivers/ws2812.h quantum/color.h quantum/util.h platforms/avr/_util.h \
+ platforms/wait.h platforms/avr/_wait.h quantum/logging/debug.h \
+ quantum/logging/print.h quantum/logging/sendchar.h \
+ tmk_core/protocol/usb_util.h platforms/bootloader.h
 
 keyboards/redox/rev1/config.h:
 
@@ -69,9 +69,15 @@ quantum/rgblight/rgblight_modes.h:
 
 quantum/eeconfig.h:
 
+platforms/eeprom.h:
+
 drivers/ws2812.h:
 
 quantum/color.h:
+
+quantum/util.h:
+
+platforms/avr/_util.h:
 
 platforms/wait.h:
 
@@ -80,8 +86,6 @@ platforms/avr/_wait.h:
 quantum/logging/debug.h:
 
 quantum/logging/print.h:
-
-quantum/util.h:
 
 quantum/logging/sendchar.h:
 

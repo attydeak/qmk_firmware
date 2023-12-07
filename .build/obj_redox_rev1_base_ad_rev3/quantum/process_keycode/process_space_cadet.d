@@ -9,7 +9,8 @@
  platforms/progmem.h quantum/keyboard.h platforms/timer.h \
  platforms/avr/_timer.h quantum/keycode.h quantum/keycodes.h \
  quantum/modifiers.h quantum/action_code.h quantum/action_tapping.h \
- quantum/action_util.h tmk_core/protocol/report.h
+ quantum/action_util.h tmk_core/protocol/report.h quantum/util.h \
+ quantum/bitwise.h platforms/avr/_util.h
 
 keyboards/redox/rev1/config.h:
 
@@ -46,3 +47,9 @@ quantum/action_tapping.h:
 quantum/action_util.h:
 
 tmk_core/protocol/report.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:

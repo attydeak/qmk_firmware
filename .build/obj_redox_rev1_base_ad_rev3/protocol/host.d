@@ -6,9 +6,9 @@
  quantum/split_common/post_config.h quantum/keyboard.h platforms/timer.h \
  platforms/avr/_timer.h quantum/keycode.h quantum/keycodes.h \
  quantum/modifiers.h tmk_core/protocol/host.h tmk_core/protocol/report.h \
- tmk_core/protocol/host_driver.h quantum/led.h quantum/util.h \
- quantum/bitwise.h quantum/logging/debug.h quantum/logging/print.h \
- quantum/logging/sendchar.h platforms/progmem.h
+ quantum/util.h quantum/bitwise.h platforms/avr/_util.h \
+ tmk_core/protocol/host_driver.h quantum/led.h quantum/logging/debug.h \
+ quantum/logging/print.h quantum/logging/sendchar.h platforms/progmem.h
 
 keyboards/redox/rev1/config.h:
 
@@ -36,13 +36,15 @@ tmk_core/protocol/host.h:
 
 tmk_core/protocol/report.h:
 
-tmk_core/protocol/host_driver.h:
-
-quantum/led.h:
-
 quantum/util.h:
 
 quantum/bitwise.h:
+
+platforms/avr/_util.h:
+
+tmk_core/protocol/host_driver.h:
+
+quantum/led.h:
 
 quantum/logging/debug.h:
 

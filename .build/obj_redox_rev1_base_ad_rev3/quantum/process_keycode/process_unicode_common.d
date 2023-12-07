@@ -12,7 +12,8 @@
  quantum/unicode/unicode_keycodes.h quantum/quantum_keycodes.h \
  quantum/keymap_extras/keymap_us.h quantum/sequencer/sequencer.h \
  quantum/quantum_keycodes_legacy.h quantum/action_util.h \
- tmk_core/protocol/report.h quantum/process_keycode/process_unicode.h
+ tmk_core/protocol/report.h quantum/util.h quantum/bitwise.h \
+ platforms/avr/_util.h quantum/process_keycode/process_unicode.h
 
 keyboards/redox/rev1/config.h:
 
@@ -59,5 +60,11 @@ quantum/quantum_keycodes_legacy.h:
 quantum/action_util.h:
 
 tmk_core/protocol/report.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 quantum/process_keycode/process_unicode.h:

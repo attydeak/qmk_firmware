@@ -8,7 +8,8 @@
  quantum/keycode.h quantum/keycodes.h quantum/modifiers.h \
  quantum/action_code.h quantum/encoder.h platforms/gpio.h \
  platforms/pin_defs.h platforms/avr/_pin_defs.h platforms/avr/gpio.h \
- quantum/util.h quantum/bitwise.h quantum/action_layer.h
+ quantum/util.h quantum/bitwise.h platforms/avr/_util.h \
+ quantum/action_layer.h
 
 keyboards/redox/rev1/config.h:
 
@@ -51,5 +52,7 @@ platforms/avr/gpio.h:
 quantum/util.h:
 
 quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 quantum/action_layer.h:

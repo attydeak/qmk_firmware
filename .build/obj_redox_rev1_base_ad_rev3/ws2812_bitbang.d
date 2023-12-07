@@ -4,6 +4,7 @@
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
  quantum/split_common/post_config.h drivers/ws2812.h quantum/color.h \
+ quantum/util.h quantum/bitwise.h platforms/avr/_util.h \
  platforms/pin_defs.h platforms/avr/_pin_defs.h
 
 keyboards/redox/rev1/config.h:
@@ -19,6 +20,12 @@ quantum/split_common/post_config.h:
 drivers/ws2812.h:
 
 quantum/color.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 platforms/pin_defs.h:
 

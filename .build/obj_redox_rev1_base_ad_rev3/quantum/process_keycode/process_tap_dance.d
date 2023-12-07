@@ -13,21 +13,22 @@
  quantum/matrix.h platforms/gpio.h platforms/pin_defs.h \
  platforms/avr/_pin_defs.h platforms/avr/gpio.h \
  quantum/rgblight/rgblight.h quantum/rgblight/rgblight_modes.h \
- quantum/eeconfig.h drivers/ws2812.h quantum/color.h \
+ quantum/eeconfig.h platforms/eeprom.h drivers/ws2812.h quantum/color.h \
+ quantum/util.h quantum/bitwise.h platforms/avr/_util.h \
  quantum/keymap_common.h quantum/quantum_keycodes.h \
  quantum/keymap_extras/keymap_us.h quantum/sequencer/sequencer.h \
  quantum/quantum_keycodes_legacy.h quantum/keycode_config.h \
- quantum/action_layer.h quantum/bitwise.h platforms/bootloader.h \
+ quantum/action_layer.h platforms/bootloader.h \
  quantum/bootmagic/bootmagic.h quantum/sync_timer.h \
  platforms/atomic_util.h platforms/avr/atomic_util.h \
  tmk_core/protocol/host.h tmk_core/protocol/report.h \
  tmk_core/protocol/host_driver.h quantum/led.h quantum/action_util.h \
- quantum/action_tapping.h quantum/logging/print.h quantum/util.h \
+ quantum/action_tapping.h quantum/logging/print.h \
  quantum/logging/sendchar.h quantum/logging/debug.h platforms/suspend.h \
  quantum/unicode/unicode.h quantum/unicode/unicode_keycodes.h \
  quantum/process_keycode/process_space_cadet.h \
  quantum/send_string/send_string.h \
- quantum/send_string/send_string_keycodes.h
+ quantum/send_string/send_string_keycodes.h quantum/mousekey.h
 
 keyboards/redox/rev1/config.h:
 
@@ -83,9 +84,17 @@ quantum/rgblight/rgblight_modes.h:
 
 quantum/eeconfig.h:
 
+platforms/eeprom.h:
+
 drivers/ws2812.h:
 
 quantum/color.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 quantum/keymap_common.h:
 
@@ -100,8 +109,6 @@ quantum/quantum_keycodes_legacy.h:
 quantum/keycode_config.h:
 
 quantum/action_layer.h:
-
-quantum/bitwise.h:
 
 platforms/bootloader.h:
 
@@ -127,8 +134,6 @@ quantum/action_tapping.h:
 
 quantum/logging/print.h:
 
-quantum/util.h:
-
 quantum/logging/sendchar.h:
 
 quantum/logging/debug.h:
@@ -144,3 +149,5 @@ quantum/process_keycode/process_space_cadet.h:
 quantum/send_string/send_string.h:
 
 quantum/send_string/send_string_keycodes.h:
+
+quantum/mousekey.h:
