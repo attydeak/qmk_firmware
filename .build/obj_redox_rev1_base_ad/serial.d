@@ -1,5 +1,4 @@
 .build/obj_redox_rev1_base_ad/serial.o: platforms/avr/drivers/serial.c \
- keyboards/redox/rev1/config.h \
  .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -12,10 +11,9 @@
  platforms/avr/_timer.h quantum/action.h quantum/keycode.h \
  quantum/keycodes.h quantum/modifiers.h quantum/action_code.h \
  quantum/bitwise.h quantum/rgblight/rgblight.h \
- quantum/rgblight/rgblight_modes.h quantum/eeconfig.h drivers/ws2812.h \
- quantum/color.h
-
-keyboards/redox/rev1/config.h:
+ quantum/rgblight/rgblight_modes.h quantum/rgblight/rgblight_drivers.h \
+ quantum/color.h quantum/util.h platforms/avr/_util.h quantum/eeconfig.h \
+ platforms/eeprom.h drivers/ws2812.h
 
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 
@@ -69,8 +67,16 @@ quantum/rgblight/rgblight.h:
 
 quantum/rgblight/rgblight_modes.h:
 
-quantum/eeconfig.h:
-
-drivers/ws2812.h:
+quantum/rgblight/rgblight_drivers.h:
 
 quantum/color.h:
+
+quantum/util.h:
+
+platforms/avr/_util.h:
+
+quantum/eeconfig.h:
+
+platforms/eeprom.h:
+
+drivers/ws2812.h:

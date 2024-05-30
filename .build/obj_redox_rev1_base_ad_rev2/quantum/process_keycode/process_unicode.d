@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev2/quantum/process_keycode/process_unicode.o: \
- quantum/process_keycode/process_unicode.c keyboards/redox/rev1/config.h \
+ quantum/process_keycode/process_unicode.c \
  .build/obj_redox_rev1_base_ad_rev2/src/info_config.h \
  keyboards/redox/keymaps/ad_rev2/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -11,8 +11,6 @@
  quantum/unicode/unicode_keycodes.h quantum/quantum_keycodes.h \
  quantum/keymap_extras/keymap_us.h quantum/sequencer/sequencer.h \
  quantum/quantum_keycodes_legacy.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev2/src/info_config.h:
 

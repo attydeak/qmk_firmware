@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev3/platforms/avr/suspend.o: \
- platforms/avr/suspend.c keyboards/redox/rev1/config.h \
+ platforms/avr/suspend.c \
  .build/obj_redox_rev1_base_ad_rev3/src/info_config.h \
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -103,8 +103,6 @@
  tmk_core/protocol/host.h tmk_core/protocol/report.h quantum/util.h \
  quantum/bitwise.h platforms/avr/_util.h tmk_core/protocol/host_driver.h \
  quantum/led.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev3/src/info_config.h:
 

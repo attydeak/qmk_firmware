@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev3/quantum/keymap_common.o: \
- quantum/keymap_common.c keyboards/redox/rev1/config.h \
+ quantum/keymap_common.c \
  .build/obj_redox_rev1_base_ad_rev3/src/info_config.h \
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -14,8 +14,6 @@
  platforms/eeprom.h quantum/quantum_keycodes.h \
  quantum/keymap_extras/keymap_us.h quantum/sequencer/sequencer.h \
  quantum/quantum_keycodes_legacy.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev3/src/info_config.h:
 

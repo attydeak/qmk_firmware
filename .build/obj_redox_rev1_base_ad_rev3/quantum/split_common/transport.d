@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transport.o: \
- quantum/split_common/transport.c keyboards/redox/rev1/config.h \
+ quantum/split_common/transport.c \
  .build/obj_redox_rev1_base_ad_rev3/src/info_config.h \
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -13,11 +13,9 @@
  quantum/keyboard.h platforms/timer.h platforms/avr/_timer.h \
  quantum/action.h quantum/keycode.h quantum/keycodes.h \
  quantum/modifiers.h quantum/action_code.h quantum/rgblight/rgblight.h \
- quantum/rgblight/rgblight_modes.h quantum/eeconfig.h platforms/eeprom.h \
- drivers/ws2812.h quantum/color.h platforms/atomic_util.h \
- platforms/avr/atomic_util.h drivers/serial.h
-
-keyboards/redox/rev1/config.h:
+ quantum/rgblight/rgblight_modes.h quantum/rgblight/rgblight_drivers.h \
+ quantum/color.h quantum/eeconfig.h platforms/eeprom.h drivers/ws2812.h \
+ platforms/atomic_util.h platforms/avr/atomic_util.h drivers/serial.h
 
 .build/obj_redox_rev1_base_ad_rev3/src/info_config.h:
 
@@ -79,13 +77,15 @@ quantum/rgblight/rgblight.h:
 
 quantum/rgblight/rgblight_modes.h:
 
+quantum/rgblight/rgblight_drivers.h:
+
+quantum/color.h:
+
 quantum/eeconfig.h:
 
 platforms/eeprom.h:
 
 drivers/ws2812.h:
-
-quantum/color.h:
 
 platforms/atomic_util.h:
 

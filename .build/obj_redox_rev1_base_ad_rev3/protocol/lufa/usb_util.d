@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev3/protocol/lufa/usb_util.o: \
- tmk_core/protocol/lufa/usb_util.c keyboards/redox/rev1/config.h \
+ tmk_core/protocol/lufa/usb_util.c \
  .build/obj_redox_rev1_base_ad_rev3/src/info_config.h \
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -97,8 +97,6 @@
  lib/lufa/LUFA/Drivers/USB/Class/Device/../Common/CDCClassCommon.h \
  lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h \
  tmk_core/protocol/usb_util.h platforms/wait.h platforms/avr/_wait.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev3/src/info_config.h:
 

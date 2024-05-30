@@ -1,4 +1,4 @@
-# Copyright 2023 QMK
+# Copyright 2024 QMK
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 ################################################################################
@@ -27,17 +27,14 @@
 ################################################################################
 
 BOOTLOADER ?= caterina
-BOOTMAGIC_ENABLE ?= no
 MCU ?= atmega32u4
-MOUSEKEY_ENABLE ?= yes
+PIN_COMPATIBLE ?= promicro
 PLATFORM_KEY ?= avr
 SPLIT_KEYBOARD ?= yes
-BOOTMAGIC_ENABLE ?= no
+BOOTMAGIC_ENABLE ?= yes
+COMMAND_ENABLE ?= yes
+CONSOLE_ENABLE ?= no
 MOUSEKEY_ENABLE ?= yes
 EXTRAKEY_ENABLE ?= yes
-CONSOLE_ENABLE ?= no
-COMMAND_ENABLE ?= yes
-NKRO_ENABLE ?= no
-BACKLIGHT_ENABLE ?= no
-AUDIO_ENABLE ?= no
+NKRO_ENABLE ?= yes
 RGBLIGHT_ENABLE ?= yes

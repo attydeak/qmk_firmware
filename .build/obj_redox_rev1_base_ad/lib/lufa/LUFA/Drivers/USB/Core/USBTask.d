@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o: \
- lib/lufa/LUFA/Drivers/USB/Core/USBTask.c keyboards/redox/rev1/config.h \
+ lib/lufa/LUFA/Drivers/USB/Core/USBTask.c \
  .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -49,8 +49,6 @@
  lib/lufa/LUFA/Drivers/USB/Core/StdRequestType.h \
  lib/lufa/LUFA/Drivers/USB/Core/StdDescriptors.h \
  lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 

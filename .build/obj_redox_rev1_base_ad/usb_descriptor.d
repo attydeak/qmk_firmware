@@ -1,12 +1,12 @@
 .build/obj_redox_rev1_base_ad/usb_descriptor.o: \
- tmk_core/protocol/usb_descriptor.c keyboards/redox/rev1/config.h \
+ tmk_core/protocol/usb_descriptor.c \
  .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
  quantum/split_common/post_config.h quantum/util.h quantum/bitwise.h \
- tmk_core/protocol/report.h quantum/keycode.h quantum/keycodes.h \
- quantum/modifiers.h tmk_core/protocol/usb_descriptor.h \
- lib/lufa/LUFA/Drivers/USB/USB.h \
+ platforms/avr/_util.h tmk_core/protocol/report.h quantum/keycode.h \
+ quantum/keycodes.h quantum/modifiers.h \
+ tmk_core/protocol/usb_descriptor.h lib/lufa/LUFA/Drivers/USB/USB.h \
  lib/lufa/LUFA/Drivers/USB/../../Common/Common.h \
  lib/lufa/LUFA/Drivers/USB/../../Common/Architectures.h \
  lib/lufa/LUFA/Drivers/USB/../../Common/BoardTypes.h \
@@ -101,8 +101,6 @@
  lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h \
  tmk_core/protocol/usb_descriptor_common.h
 
-keyboards/redox/rev1/config.h:
-
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 
 keyboards/redox/keymaps/ad/config.h:
@@ -114,6 +112,8 @@ quantum/split_common/post_config.h:
 quantum/util.h:
 
 quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 tmk_core/protocol/report.h:
 

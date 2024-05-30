@@ -1,6 +1,5 @@
 .build/obj_redox_rev1_base_ad/quantum/process_keycode/process_unicode_common.o: \
  quantum/process_keycode/process_unicode_common.c \
- keyboards/redox/rev1/config.h \
  .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -12,9 +11,8 @@
  quantum/unicode/unicode_keycodes.h quantum/quantum_keycodes.h \
  quantum/keymap_extras/keymap_us.h quantum/sequencer/sequencer.h \
  quantum/quantum_keycodes_legacy.h quantum/action_util.h \
- tmk_core/protocol/report.h quantum/process_keycode/process_unicode.h
-
-keyboards/redox/rev1/config.h:
+ tmk_core/protocol/report.h quantum/util.h quantum/bitwise.h \
+ platforms/avr/_util.h quantum/process_keycode/process_unicode.h
 
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 
@@ -59,5 +57,11 @@ quantum/quantum_keycodes_legacy.h:
 quantum/action_util.h:
 
 tmk_core/protocol/report.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 quantum/process_keycode/process_unicode.h:

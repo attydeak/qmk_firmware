@@ -1,6 +1,5 @@
 .build/obj_redox_rev1_base_ad/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o: \
  lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.c \
- keyboards/redox/rev1/config.h \
  .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -56,8 +55,6 @@
  lib/lufa/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_RW.c \
  lib/lufa/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_W.c \
  lib/lufa/LUFA/Drivers/USB/Core/AVR8/Template/Template_Endpoint_Control_R.c
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 

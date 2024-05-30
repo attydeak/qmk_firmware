@@ -9,19 +9,6 @@
 *.orig
 *.rej
 
-<<<<<<< HEAD
-# # Build artifacts
-# .clang_complete
-# .build/
-# *.elf
-# *.log
-# *.lss
-# *.lst
-# *.map
-# *.o
-# *.stackdump
-# *.sym
-=======
 # Build artifacts
 .clang_complete
 .build/
@@ -38,7 +25,6 @@
 *.la
 *.stackdump
 *.sym
->>>>>>> e99b7f240aacd4d9a0182396533a3e972ea1f9a8
 
 # QMK-specific
 api_data/v1

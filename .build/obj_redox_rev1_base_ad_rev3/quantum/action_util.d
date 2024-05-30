@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev3/quantum/action_util.o: \
- quantum/action_util.c keyboards/redox/rev1/config.h \
+ quantum/action_util.c \
  .build/obj_redox_rev1_base_ad_rev3/src/info_config.h \
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -12,8 +12,6 @@
  quantum/action_layer.h quantum/keyboard.h platforms/timer.h \
  platforms/avr/_timer.h quantum/action.h quantum/action_code.h \
  quantum/keycode_config.h quantum/eeconfig.h platforms/eeprom.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev3/src/info_config.h:
 

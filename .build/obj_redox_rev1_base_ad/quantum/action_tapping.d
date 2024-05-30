@@ -1,6 +1,5 @@
 .build/obj_redox_rev1_base_ad/quantum/action_tapping.o: \
- quantum/action_tapping.c keyboards/redox/rev1/config.h \
- .build/obj_redox_rev1_base_ad/src/info_config.h \
+ quantum/action_tapping.c .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
  quantum/split_common/post_config.h quantum/action.h platforms/progmem.h \
@@ -8,8 +7,6 @@
  quantum/keycode.h quantum/keycodes.h quantum/modifiers.h \
  quantum/action_code.h quantum/action_layer.h quantum/bitwise.h \
  quantum/action_tapping.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 

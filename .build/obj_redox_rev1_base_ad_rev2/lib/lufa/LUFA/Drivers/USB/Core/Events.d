@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev2/lib/lufa/LUFA/Drivers/USB/Core/Events.o: \
- lib/lufa/LUFA/Drivers/USB/Core/Events.c keyboards/redox/rev1/config.h \
+ lib/lufa/LUFA/Drivers/USB/Core/Events.c \
  .build/obj_redox_rev1_base_ad_rev2/src/info_config.h \
  keyboards/redox/keymaps/ad_rev2/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -13,8 +13,6 @@
  lib/lufa/LUFA/Drivers/USB/Core/../../../Common/Attributes.h \
  lib/lufa/LUFA/Drivers/USB/Core/../../../Common/Endianness.h \
  lib/lufa/LUFA/Drivers/USB/Core/USBMode.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev2/src/info_config.h:
 

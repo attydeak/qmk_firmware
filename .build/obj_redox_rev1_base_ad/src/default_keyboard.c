@@ -1,4 +1,4 @@
-// Copyright 2023 QMK
+// Copyright 2024 QMK
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 /*******************************************************************************
@@ -25,3 +25,17 @@
 
 #include QMK_KEYBOARD_H
 
+#ifdef MATRIX_MASKED
+__attribute__((weak)) const matrix_row_t matrix_mask[] = {
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+    0b1111111,
+};
+#endif

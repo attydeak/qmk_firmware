@@ -1,6 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev2/lib/lufa/LUFA/Drivers/USB/Class/Common/HIDParser.o: \
  lib/lufa/LUFA/Drivers/USB/Class/Common/HIDParser.c \
- keyboards/redox/rev1/config.h \
  .build/obj_redox_rev1_base_ad_rev2/src/info_config.h \
  keyboards/redox/keymaps/ad_rev2/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -19,8 +18,6 @@
  lib/lufa/LUFA/Drivers/USB/Class/Common/../../Core/../../../Common/Common.h \
  lib/lufa/LUFA/Drivers/USB/Class/Common/../../Core/USBMode.h \
  lib/lufa/LUFA/Drivers/USB/Class/Common/../../Core/Events.h
-
-keyboards/redox/rev1/config.h:
 
 .build/obj_redox_rev1_base_ad_rev2/src/info_config.h:
 

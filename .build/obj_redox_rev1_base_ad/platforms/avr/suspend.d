@@ -1,6 +1,5 @@
 .build/obj_redox_rev1_base_ad/platforms/avr/suspend.o: \
- platforms/avr/suspend.c keyboards/redox/rev1/config.h \
- .build/obj_redox_rev1_base_ad/src/info_config.h \
+ platforms/avr/suspend.c .build/obj_redox_rev1_base_ad/src/info_config.h \
  keyboards/redox/keymaps/ad/config.h \
  quantum/rgblight/rgblight_post_config.h \
  quantum/split_common/post_config.h platforms/suspend.h quantum/action.h \
@@ -100,10 +99,9 @@
  lib/lufa/LUFA/Drivers/USB/Class/Device/../Common/RNDISClassCommon.h \
  lib/lufa/LUFA/Drivers/USB/Class/Device/../Common/CDCClassCommon.h \
  lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h \
- tmk_core/protocol/host.h tmk_core/protocol/report.h \
- tmk_core/protocol/host_driver.h quantum/led.h
-
-keyboards/redox/rev1/config.h:
+ tmk_core/protocol/host.h tmk_core/protocol/report.h quantum/util.h \
+ quantum/bitwise.h platforms/avr/_util.h tmk_core/protocol/host_driver.h \
+ quantum/led.h
 
 .build/obj_redox_rev1_base_ad/src/info_config.h:
 
@@ -326,6 +324,12 @@ lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h:
 tmk_core/protocol/host.h:
 
 tmk_core/protocol/report.h:
+
+quantum/util.h:
+
+quantum/bitwise.h:
+
+platforms/avr/_util.h:
 
 tmk_core/protocol/host_driver.h:
 

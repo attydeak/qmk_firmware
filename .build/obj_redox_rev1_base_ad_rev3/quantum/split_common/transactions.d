@@ -1,5 +1,5 @@
 .build/obj_redox_rev1_base_ad_rev3/quantum/split_common/transactions.o: \
- quantum/split_common/transactions.c keyboards/redox/rev1/config.h \
+ quantum/split_common/transactions.c \
  .build/obj_redox_rev1_base_ad_rev3/src/info_config.h \
  keyboards/redox/keymaps/ad_rev3/config.h \
  quantum/rgblight/rgblight_post_config.h \
@@ -17,10 +17,9 @@
  quantum/split_common/transport.h quantum/action_layer.h \
  quantum/keyboard.h quantum/action.h quantum/action_code.h \
  quantum/rgblight/rgblight.h quantum/rgblight/rgblight_modes.h \
- quantum/eeconfig.h platforms/eeprom.h drivers/ws2812.h quantum/color.h \
- quantum/split_common/split_util.h platforms/synchronization_util.h
-
-keyboards/redox/rev1/config.h:
+ quantum/rgblight/rgblight_drivers.h quantum/color.h quantum/eeconfig.h \
+ platforms/eeprom.h drivers/ws2812.h quantum/split_common/split_util.h \
+ platforms/synchronization_util.h
 
 .build/obj_redox_rev1_base_ad_rev3/src/info_config.h:
 
@@ -100,13 +99,15 @@ quantum/rgblight/rgblight.h:
 
 quantum/rgblight/rgblight_modes.h:
 
+quantum/rgblight/rgblight_drivers.h:
+
+quantum/color.h:
+
 quantum/eeconfig.h:
 
 platforms/eeprom.h:
 
 drivers/ws2812.h:
-
-quantum/color.h:
 
 quantum/split_common/split_util.h:
 
