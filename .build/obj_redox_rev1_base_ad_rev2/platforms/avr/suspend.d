@@ -101,8 +101,8 @@
  lib/lufa/LUFA/Drivers/USB/Class/Device/../Common/CDCClassCommon.h \
  lib/lufa/LUFA/Drivers/USB/Class/StillImageClass.h \
  tmk_core/protocol/host.h tmk_core/protocol/report.h quantum/util.h \
- quantum/bitwise.h platforms/avr/_util.h tmk_core/protocol/host_driver.h \
- quantum/led.h
+ quantum/bits.h quantum/bitwise.h platforms/avr/_util.h \
+ tmk_core/protocol/host_driver.h quantum/led.h
 
 .build/obj_redox_rev1_base_ad_rev2/src/info_config.h:
 
@@ -327,6 +327,8 @@ tmk_core/protocol/host.h:
 tmk_core/protocol/report.h:
 
 quantum/util.h:
+
+quantum/bits.h:
 
 quantum/bitwise.h:
 

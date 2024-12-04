@@ -56,11 +56,20 @@ enum {
   ALL,
   SAVE,
   UNDO,
+  REDO,
   CUT,
   COPY,
   PASTE,
-  BOLD
+  BOLD,
+  CLOSE,
+  NTAB
 };
+
+// Key when tapped, alt when held
+#define WINL LT(0,KC_L)
+
+//Ctrl + Shift
+#define CSHIFT LCTL(KC_LSFT)
 
 // Tap Dance definitions
 tap_dance_action_t tap_dance_actions[] = {
@@ -68,10 +77,13 @@ tap_dance_action_t tap_dance_actions[] = {
     [ALL] = ACTION_TAP_DANCE_DOUBLE(KC_A, C(KC_A)),
     [SAVE] = ACTION_TAP_DANCE_DOUBLE(KC_S, C(KC_S)),
     [UNDO] = ACTION_TAP_DANCE_DOUBLE(KC_Z, C(KC_Z)),
+    [REDO] = ACTION_TAP_DANCE_DOUBLE(KC_Y, C(KC_Y)),
     [CUT] = ACTION_TAP_DANCE_DOUBLE(KC_X, C(KC_X)),
     [COPY] = ACTION_TAP_DANCE_DOUBLE(KC_C, C(KC_C)),
     [PASTE] = ACTION_TAP_DANCE_DOUBLE(KC_V, C(KC_V)),
     [BOLD] = ACTION_TAP_DANCE_DOUBLE(KC_B, C(KC_B)),
+    [CLOSE] = ACTION_TAP_DANCE_DOUBLE(KC_W, C(KC_W)),
+    [NTAB] = ACTION_TAP_DANCE_DOUBLE(KC_T, C(KC_T)),
 };
 
 // Is shift being held? Let's store this in a bool.
@@ -154,6 +166,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
             break;
         }
+
+        case LT(0,KC_L):
+            if (!record->tap.count && record->event.pressed) {
+                tap_code16(G(KC_L)); // Intercept hold function to send Gui-L
+                return false;
+            }
+            return true;             // Return true for normal processing of tap keycode
     }
     return true;
 };
@@ -166,9 +185,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB  ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_ESC  ,                          KC_PSCR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_EQL  ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     NAV_L   ,TD(ALL) ,TD(SAVE),KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_SYQT ,
+     NAV_L   ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,M_BRACKET_LEFT,            M_BRACKET_RIGHT ,KC_H    ,KC_J    ,KC_K    ,WINL    ,KC_SCLN ,KC_SYQT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,TD(UNDO),TD(CUT) ,TD(COPY),TD(PASTE),TD(BOLD),TT(_NAV),KC_LSFT,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
+     KC_LSFT ,KC_Z    ,TD(CUT) ,TD(COPY),TD(PASTE),TD(BOLD),TT(_NAV),CSHIFT ,        KC_DEL  ,TT(_SYMB),KC_N   ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSFT ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
      MO_INTR ,KC_LCTL ,KC_HYPR ,KC_LALT ,     KC_LCMD ,    KC_SPC  ,KC_LCTL ,        KC_BSPC ,KC_ENT  ,    KC_LSFT ,     TT_ADJ  ,KC_APP  ,KC_BSLS ,MO_INTR
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘

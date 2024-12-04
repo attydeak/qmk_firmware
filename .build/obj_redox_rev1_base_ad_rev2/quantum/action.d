@@ -4,7 +4,7 @@
  quantum/rgblight/rgblight_post_config.h \
  quantum/split_common/post_config.h tmk_core/protocol/host.h \
  tmk_core/protocol/report.h quantum/keycode.h quantum/keycodes.h \
- quantum/modifiers.h quantum/util.h quantum/bitwise.h \
+ quantum/modifiers.h quantum/util.h quantum/bits.h quantum/bitwise.h \
  platforms/avr/_util.h tmk_core/protocol/host_driver.h quantum/led.h \
  quantum/keyboard.h platforms/timer.h platforms/avr/_timer.h \
  quantum/mousekey.h quantum/programmable_button.h quantum/command.h \
@@ -16,7 +16,7 @@
  platforms/avr/platform_deps.h quantum/matrix.h platforms/gpio.h \
  platforms/pin_defs.h platforms/avr/_pin_defs.h platforms/avr/gpio.h \
  quantum/rgblight/rgblight.h quantum/rgblight/rgblight_modes.h \
- quantum/rgblight/rgblight_drivers.h quantum/color.h drivers/ws2812.h \
+ quantum/rgblight/rgblight_drivers.h quantum/color.h \
  quantum/keymap_common.h quantum/quantum_keycodes.h \
  quantum/keymap_extras/keymap_us.h quantum/sequencer/sequencer.h \
  quantum/quantum_keycodes_legacy.h platforms/bootloader.h \
@@ -47,6 +47,8 @@ quantum/keycodes.h:
 quantum/modifiers.h:
 
 quantum/util.h:
+
+quantum/bits.h:
 
 quantum/bitwise.h:
 
@@ -117,8 +119,6 @@ quantum/rgblight/rgblight_modes.h:
 quantum/rgblight/rgblight_drivers.h:
 
 quantum/color.h:
-
-drivers/ws2812.h:
 
 quantum/keymap_common.h:
 
