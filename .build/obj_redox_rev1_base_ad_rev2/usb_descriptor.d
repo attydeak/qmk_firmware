@@ -3,9 +3,9 @@
  .build/obj_redox_rev1_base_ad_rev2/src/info_config.h \
  keyboards/redox/keymaps/ad_rev2/config.h \
  quantum/rgblight/rgblight_post_config.h \
- quantum/split_common/post_config.h quantum/util.h quantum/bitwise.h \
- platforms/avr/_util.h tmk_core/protocol/report.h quantum/keycode.h \
- quantum/keycodes.h quantum/modifiers.h \
+ quantum/split_common/post_config.h quantum/util.h quantum/bits.h \
+ quantum/bitwise.h platforms/avr/_util.h tmk_core/protocol/report.h \
+ quantum/keycode.h quantum/keycodes.h quantum/modifiers.h \
  tmk_core/protocol/usb_descriptor.h lib/lufa/LUFA/Drivers/USB/USB.h \
  lib/lufa/LUFA/Drivers/USB/../../Common/Common.h \
  lib/lufa/LUFA/Drivers/USB/../../Common/Architectures.h \
@@ -110,6 +110,8 @@ quantum/rgblight/rgblight_post_config.h:
 quantum/split_common/post_config.h:
 
 quantum/util.h:
+
+quantum/bits.h:
 
 quantum/bitwise.h:
 
