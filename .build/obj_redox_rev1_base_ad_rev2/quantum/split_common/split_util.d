@@ -12,8 +12,8 @@
  quantum/keycodes.h quantum/modifiers.h quantum/action_code.h \
  quantum/bitwise.h quantum/rgblight/rgblight.h \
  quantum/rgblight/rgblight_modes.h quantum/rgblight/rgblight_drivers.h \
- quantum/color.h quantum/util.h platforms/avr/_util.h quantum/eeconfig.h \
- platforms/eeprom.h drivers/ws2812.h platforms/wait.h \
+ quantum/eeconfig.h platforms/eeprom.h quantum/util.h quantum/bits.h \
+ platforms/avr/_util.h quantum/color.h platforms/wait.h \
  platforms/avr/_wait.h quantum/logging/debug.h quantum/logging/print.h \
  quantum/logging/sendchar.h tmk_core/protocol/usb_util.h \
  platforms/bootloader.h
@@ -68,17 +68,17 @@ quantum/rgblight/rgblight_modes.h:
 
 quantum/rgblight/rgblight_drivers.h:
 
-quantum/color.h:
-
-quantum/util.h:
-
-platforms/avr/_util.h:
-
 quantum/eeconfig.h:
 
 platforms/eeprom.h:
 
-drivers/ws2812.h:
+quantum/util.h:
+
+quantum/bits.h:
+
+platforms/avr/_util.h:
+
+quantum/color.h:
 
 platforms/wait.h:
 
